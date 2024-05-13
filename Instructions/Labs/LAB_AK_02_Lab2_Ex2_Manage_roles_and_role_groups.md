@@ -75,7 +75,7 @@ Na tarefa anterior, você atribuiu uma função de administrador diretamente à 
 
 20. Para verificar se Lynne herdou as funções atribuídas ao grupo de funções de gerenciamento de usuários, selecione **Lynne Robbins** na lista de usuários ativos. 
 
-21. No painel **Lynne Robbins** que aparece, na guia **Conta** que é exibida por padrão, você deve ver as três funções de gerenciamento de usuário que foram atribuídas a Lynne. Na seção** **Funções**, selecione **Gerenciar funções**.
+21. No painel **Lynne Robbins** que aparece, na guia **Conta** que é exibida por padrão, você deve ver as três funções de gerenciamento de usuário que foram atribuídas a Lynne. Na seção **Funções**, selecione **Gerenciar funções**.
 
 22. No painel **Gerenciar funções de administrador** que aparece, sob a opção **Acesso ao Centro de administração**, observe as três funções que estão selecionadas e o nome do grupo do qual elas foram atribuídas a Lynne. Também observe como as três funções estão esmaecidas. Isso indica que você não pode desmarcar as funções desta janela. Como as funções foram atribuídas a Lynne a partir de um grupo que continha essas funções, você só pode cancelar a atribuição removendo Lynne como membro do grupo de funções. Você acabou de verificar que Lynne recebeu essas funções. Feche este painel de **Gerenciar funções de administrador**.
 
@@ -212,7 +212,11 @@ Nesta tarefa, você irá começar examinando as propriedades administrativas de 
 
 11. No navegador **Edge**, navegue até **https://portal.office.com**. 
 
-12. Você começará entrando no Microsoft 365 como **Joni Sherman**. Na janela **Entrar**, insira **JoniS@xxxxxZZZZZZ.onmicrosoft.com** (no qual xxxxxZZZZZZ é o prefixo do locatário fornecido pelo provedor de hospedagem do seu laboratório). Na janela **Inserir senha**, insira a mesma **senha do locatário do Microsoft 365** fornecida pelo provedor de hospedagem do seu laboratório para a conta de administrador do locatário (ou seja, a conta de administrador do MOD).
+12. Você começará entrando no Microsoft 365 como **Joni Sherman**. Na janela **Entrar**, insira **JoniS@xxxxxZZZZZZ.onmicrosoft.com** (no qual xxxxxZZZZZZ é o prefixo do locatário fornecido pelo provedor de hospedagem do seu laboratório). <br/>
+
+    **Importante:** Seu provedor de hospedagem de laboratório atribuiu uma **senha administrativa** à conta do administrador do MOD, e você atribuiu essa mesma **senha administrativa** à conta de Holly Dickson quando a criou. No entanto, seu provedor de hospedagem de laboratório atribuiu uma **Senha de usuário** diferente para todas as outras contas de usuário predefinidas. A partir de agora, ao fazer login como qualquer usuário que não seja o Administrador do MOD ou Holly Dickson, você deverá inserir essa **Senha de usuário** e NÃO a **Senha administrativa**. <br/>
+
+    Como você está fazendo login como Joni Sherman, digite essa **Senha de usuário** na janela **Digite a senha**. Se necessário, conclua o processo de login do MFA.
 
 13. Na janela **Permanecer conectado?**, marque a caixa de seleção **Não mostrar isso novamente** e depois selecione **Sim**. Se aparecer uma janela **Salvar senha**, selecione **Nunca**.
 
@@ -224,7 +228,9 @@ Nesta tarefa, você irá começar examinando as propriedades administrativas de 
 
 17. Agora você sairá do Microsoft 365 como Joni. No **Microsoft Edge**, no canto superior direito da página **Bem-vindo ao Microsoft 365**, selecione o ícone de usuário para **Joni Sherman** (o círculo no canto superior direito com a imagem de Joni nele), e na janela **Joni Sherman** que aparece, selecione **Sair**. 
 
-18. Agora você irá entrar no Microsoft 365 como **Lynne Robbins**. Na guia atual do navegador **Edge**, deve ser exibida uma mensagem indicando **Joni, você está desconectado agora**. Nesta janela, você tem a opção de entrar novamente como Joni ou entrar como um usuário diferente. Selecione **Alternar para uma conta diferente**, e no campo **Endereço de email** que aparece, insira **LynneR@xxxxxZZZZZZ.onmicrosoft.com** (no qual xxxxxZZZZZZ é o prefixo do locatário fornecido pelo provedor de hospedagem do seu laboratório) e então selecione **Entrar**. Na janela **Inserir senha**, insira a mesma **senha do locatário do Microsoft 365** fornecida pelo provedor de hospedagem do seu laboratório para a conta de administrador do locatário (ou seja, a conta de administrador do MOD).
+18. Agora você irá entrar no Microsoft 365 como **Lynne Robbins**. Na guia atual do navegador **Edge**, deve ser exibida uma mensagem indicando **Joni, você está desconectado agora**. Nesta janela, você tem a opção de entrar novamente como Joni ou entrar como um usuário diferente. <br/>
+
+    Selecione **Alternar para uma conta diferente**, e no campo **Endereço de email** que aparece, insira **LynneR@xxxxxZZZZZZ.onmicrosoft.com** (no qual xxxxxZZZZZZ é o prefixo do locatário fornecido pelo provedor de hospedagem do seu laboratório) e então selecione **Entrar**. Na janela **Digite a senha**, digite a **Senha do usuário** fornecida pelo seu provedor de hospedagem de laboratório e selecione **Entrar**. Se necessário, conclua o processo de login do MFA. 
 
 19. Se aparecer uma caixa de diálogo **Bem-vindo ao Microsoft 365**, selecione a seta para frente (>) duas vezes e, em seguida, a marca de seleção para fechá-la.
 
@@ -288,7 +294,7 @@ Nesta tarefa, você irá começar examinando as propriedades administrativas de 
 
 43. Como melhor prática, feche todas as abas do seu navegador, exceto a aba **Sair**, depois de sair do serviço. Na guia **Sair**, navegue até **https://portal.office.com**. 
 
-44. Na janela **Escolher uma conta**, selecione **Usar outra conta**. Na janela **Entrar**, insira **AlexW@xxxxxZZZZZZ.onmicrosoft.com** (no qual xxxxxZZZZZZ é o prefixo do locatário fornecido pelo provedor de hospedagem do seu laboratório). Na janela **Inserir senha**, insira a mesma **senha do locatário do Microsoft 365** fornecida pelo provedor de hospedagem do seu laboratório para a conta de administrador do locatário (ou seja, a conta de administrador do MOD).  <br/>
+44. Na janela **Escolher uma conta**, selecione **Usar outra conta**. Na janela **Entrar**, insira **AlexW@xxxxxZZZZZZ.onmicrosoft.com** (no qual xxxxxZZZZZZ é o prefixo do locatário fornecido pelo provedor de hospedagem do seu laboratório). Na janela **Digite a senha**, digite a **Senha do usuário** fornecida pelo seu provedor de hospedagem do laboratório.  <br/>
 
     A janela **Escolher uma conta** deve aparecer e exibir uma mensagem de erro indicando que **Sua conta foi bloqueada. Entre em contato com sua equipe de suporte para desbloqueá-la e, em seguida, tente novamente. ** Você acabou de verificar que Alex (ou alguém que obteve o nome de usuário e senha de Alex) não pode fazer logon. <br/>
 
