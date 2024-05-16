@@ -279,7 +279,7 @@ Para verificar se a proteção atribuída ao documento funciona, envie primeiro 
 
 20. Na janela **Entrar**, insira **JoniS@xxxxxZZZZZZ.onmicrosoft** (em que xxxxxZZZZZZ é o prefixo de locatário fornecido pelo provedor de hospedagem do seu laboratório) e selecione **Avançar**.
 
-21. Na janela **Inserir senha**, insira a mesma **Senha Administrativa** fornecida pelo provedor de hospedagem do seu laboratório para a conta de administrador do locatário (ou seja, a conta do Administrador MOD) e selecione **Entrar**.
+21. Na janela **Digite a senha**, digite a **Senha do usuário** fornecida pelo seu provedor de hospedagem de laboratório e selecione **Entrar**. Se necessário, conclua o processo de logon do MFA.
 
 22. Se uma janela **Bem-vindo** aparecer, selecione o X para fechá-lo.
 
