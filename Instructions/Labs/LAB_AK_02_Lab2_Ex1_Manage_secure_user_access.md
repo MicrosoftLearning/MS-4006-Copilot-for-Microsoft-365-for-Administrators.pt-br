@@ -36,7 +36,7 @@ Holly Dickson é a nova Administradora do Microsoft 365 da Adatum. Já que uma c
 
 5. Na página **Usuários Ativos**, na lista de usuários, selecione **Christie Cline** (selecione o nome de Christie com o hiperlink, não a caixa de seleção ao lado de nome dela).
 
-6. No painel **Christie Cline** que aparece, a guia **Conta** é exibida por padrão. Selecione a guia **Licenças e aplicativos**. Em **Licenças (2)**, marque as caixas de seleção ao lado de **Enterprise Mobility + Security E5** e **Microsoft 365 E5** para desmarcá-las e selecione **Salvar alterações**. Após as alterações serem salvas, feche o painel **Christie Cline**. 
+6. No painel **Christie Cline** que aparece, a guia **Conta** é exibida por padrão. Selecione a guia **Licenças e aplicativos**. Em **Licenças (2)**, marque as caixas de seleção ao lado de **Enterprise Mobility + Security E5** e **Microsoft 365 E5** para desmarcá-las e selecione **Salvar alterações**. Após as alterações serem salvas, feche o painel **Christie Cline**.
 
 7. Agora está tudo pronto para você criar uma conta de usuário para Holly Dickson, que é a nova Administradora do Microsoft 365 da Adatum. Ao fazê-lo, você irá atribuir à Holly a função de Administrador Global do Microsoft 365, que fornece à Holly acesso global à maioria dos recursos de gerenciamento e dados nos serviços online da Microsoft. Você também atribuirá à Holly as duas licenças cuja atribuição à Christie Cline você acabou de cancelar. <br/>
 
@@ -157,9 +157,13 @@ Em uma tarefa anterior, você criou um grupo do Microsoft 365 para os membros da
 23. Permaneça conectado no LON-CL1 com o **centro de administração do Microsoft 365** aberto no seu navegador para a próxima tarefa.
 
 
-### Tarefa 3: Implantar a MFA usando uma política de Acesso Condicional
+### Tarefa 3: Criar uma política de Acesso Condicional para implementar a MFA
+
+**IMPORTANTE:** Essa tarefa começa examinando a política de Acesso Condicional que a Microsoft criou para implementar a MFA para todos os usuários. No entanto, seu Parceiro de Aprendizagem pode estar usando locatários de avaliação que precedem a alteração recente da política de MFA. Se você não tiver sido solicitado a executar a MFA após cada entrada do usuário, o locatário de avaliação não exigirá a MFA. Nesse caso, a política de MFA criada pela Microsoft não aparecerá em sua lista de políticas. Se esse for o caso com seu locatário, você ignorará as etapas que analisam essa política. 
 
 Como seu treinamento indicou, existem três maneiras de implementar a MFA: com políticas de Acesso Condicional, com padrões de segurança e com a MFA por usuário herdada (não recomendada para organizações maiores). Nesse exercício, você vai habilitar a MFA por meio de uma política de Acesso Condicional, que é o método recomendado pela Microsoft. O Adatum orientou Holly a habilitar a MFA para todos os seus usuários do Microsoft 365 - internos e externos. No entanto, para testar a implementação do projeto piloto do Microsoft 365 da Adatum, a Holly quer isentar os membros do grupo do projeto piloto da M365 da exigência de usar MFA para entrar. Após o projeto piloto ter sido concluído, a Holly irá atualizar a política removendo a isenção da exigência de MFA desse grupo. A política também incluirá duas outras exigências. Exigirá a MFA para todos os aplicativos de nuvem e exigirá a MFA mesmo que um usuário faça login a partir de um local confiável. 
+
+**Observação:** Embora você crie uma política de Acesso Condicional nesta tarefa que habilite a MFA, você NÃO a habilitará. Alguns alunos podem ter um locatário que exija a MFA, caso em que essa política não será aplicada. E mesmo que cada aluno da sua classe tenha um locatário que não exija a MFA, você ainda não habilitará sua política. O objetivo deste exercício é fornecer a você experiência na criação de uma política para habilitar a MFA e não na autenticação com a MFA, o que presumimos que você saiba como fazer. Portanto, escolhemos não permitir que os alunos habilitem sua política, o que fornece o melhor compromisso dada a possível situação do locatário em sua classe. 
 
 1. Na VM LON-CL1, o **centro de administração do Microsoft 365** ainda deve estar aberto no navegador Microsoft Edge da tarefa anterior. Você deve estar conectado ao Microsoft 365 como **Holly Dickson**.
    
@@ -169,7 +173,9 @@ Como seu treinamento indicou, existem três maneiras de implementar a MFA: com p
 
 4. Na página **Acesso Condicional | Visão geral**, selecione **Políticas** no painel de navegação do meio.
 
-5. Na página **Acesso Condicional | Políticas**, leia as políticas padrão disponíveis com sua assinatura do Microsoft 365. Observe que a política intitulada **Autenticação multifator para parceiros e fornecedores da Microsoft**. Esta é a política de Acesso Condicional que a Microsoft criou que requer MFA para todos os usuários em todos os aplicativos de nuvem. Selecione essa política para que você possa ver como a Microsoft está impondo MFA para todos os usuários neste locatário de avaliação.
+5. Na página **Acesso Condicional | Políticas**, leia as políticas padrão disponíveis com sua assinatura do Microsoft 365. Observe que a política intitulada **Autenticação multifator para parceiros e fornecedores da Microsoft**. Esta é a política de Acesso Condicional que a Microsoft criou que requer MFA para todos os usuários em todos os aplicativos de nuvem. Selecione essa política para que você possa ver como a Microsoft está impondo MFA para todos os usuários neste locatário de avaliação.   <br/>
+
+    **IMPORTANTE:** Seu Parceiro de Aprendizagem pode estar usando locatários de avaliação que precedem essa alteração recente da MFA. Se você não tiver sido solicitado a executar a MFA após cada entrada do usuário, o locatário de avaliação não exigirá a MFA. Nesse caso, a política intitulada **Autenticação multifator para parceiros e fornecedores da Microsoft** não aparecerá na sua lista de políticas, caso em que deverá saltar para o passo 11 para começar a criar a sua própria política de Acesso Condicional. 
 
 6. Na página **Autenticação multifator** para parceiros e fornecedores da Microsoft, no grupo **Usuários**, selecione **Todos os usuários incluídos e usuários específicos excluídos**. Fazer isso irá exibir duas guias: **Incluir** e **Isentar**.
 
@@ -223,17 +229,15 @@ Como seu treinamento indicou, existem três maneiras de implementar a MFA: com p
 
 24. No painel **Conceder** que aparece, verifique se a opção **Conceder acesso** está selecionada (você pode selecioná-la, se necessário). A seguir, marque a caixa de seleção **Exigir autenticação multifator**. Observe todos os outros controles de acesso disponíveis que podem ser habilitados com essa política. Para essa política, você só precisará da MFA. Selecione o botão **Selecionar** na parte inferior do painel **Conceder**, que fechará o painel. 
 
-25. Na parte inferior da **Nova** janela, no campo **Habilitar política**, selecione **Habilitada**.
-
-26. Observe a opção que aparece na parte inferior da página, alertando para você não se bloquear do lado de fora. Selecione a opção **Eu entendo que minha conta será afetada por essa política. Continuar assim mesmo.** Na verdade, a Holly não será afetada, já que faz parte do grupo do projeto piloto do M365, que é isento dessa política.
+25. **IMPORTANTE:** Neste ponto, você normalmente definiria o campo **Habilitar política** como **Ativado**. No entanto, como alguns alunos podem ter locatários de avaliação mais antigos que não exigem a MFA, enquanto outros podem ter novos locatários que a exigem, você NÃO habilitará a política que acabou de criar. Dessa forma, defina o campo **Habilitar política** como **Desativado**.
 
 27. Selecione o botão **Criar** para criar a política.
 
-28. Na janela **Acesso Condicional | Políticas** que aparece, verifique se a política **MFA para todos os usuários do Microsoft 365** aparece e se seu **Estado** está definido como **Habilitada**.
+28. Na janela exibida **Acesso Condicional | Políticas**, verifique se a política da **MFA para todos os usuários do Microsoft 365** aparece e se seu **Estado** está definido como **Desativado**.
 
 29. Permaneça conectado ao LON-CL1 com todas as guias do seu navegador Microsoft Edge abertas para a próxima tarefa.
 
-**Observação:** De acordo com a discussão anterior, não há como testar sua política de Acesso Condicional no locatário de avaliação atual do Microsoft 365. A política de Acesso Condicional da Microsoft requer MFA para todos os usuários. Quando você tem várias políticas que exigem MFA, a política mais restritiva se aplica. Nesse caso, a política da Microsoft é mais restritiva do que a que você acabou de criar que incluiu exceções para os membros do grupo de projetos piloto. Mesmo que você não possa testar sua política usando esse locatário de avaliação, recomendamos que você use essa experiência de criação de uma política de Acesso Condicional para exigir MFA em suas implantações do Microsoft 365 no mundo real.
+**Observação:** De acordo com a discussão anterior, não há como testar sua política de Acesso Condicional se você tiver um locatário de avaliação do Microsoft 365 que exija MFA. A política de Acesso Condicional da Microsoft requer MFA para todos os usuários. Quando você tem várias políticas que exigem MFA, a política mais restritiva se aplica. Nesse caso, a política da Microsoft é mais restritiva do que aquela que você acabou de criar, que incluía exceções para os membros do grupo do projeto piloto, portanto, não haveria forma de testar a sua política. Se o seu locatário for mais antigo e não exigir a MFA, você não a testará, pois outros alunos da sua turma podem ter locatários que já exigem o uso da MFA. Em vez de permitir que você teste sua política enquanto os outros não podem, optamos por não testar sua política. Mesmo que você não possa testar sua política usando esse locatário de avaliação, recomendamos que você use essa experiência de criação de uma política de Acesso Condicional para exigir MFA em suas implantações do Microsoft 365 no mundo real.
 
 
 ### Tarefa 4: Implantar o Bloqueio Inteligente do Microsoft Entra
