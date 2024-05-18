@@ -19,29 +19,8 @@ Em seu ambiente de laboratório, o provedor de hospedagem do laboratório já ob
 
 Você fará login no Client 1 PC (LON-CL1) usando a conta local Adatum\Administrator. Quando acessar o Microsoft 365 pela primeira vez, você fará login inicialmente usando a conta de administrador de locatário do Microsoft 365 (MOD Administrator). Em seguida, você vai preparar o locatário do Microsoft 365 da Adatum para o Microsoft Entra ID e para os próximos laboratórios usando alertas de auditoria e o Microsoft Graph PowerShell.
 
-**Comunicado importante de MFA:** O Microsoft Security recentemente implementou uma nova estratégia de segurança nos locatários de avaliação que são usados em seus cursos de treinamento. Esse recurso requer que todos os locatários de avaliação usados pelo Microsoft World-Wide Learning utilizem a Autenticação Multifator (MFA) sempre que um usuário entrar no Microsoft 365. O Microsoft World-Wide Learning NÃO pode desativar esse requisito de segurança em seus laboratórios de treinamento. Além disso, não podemos usar o Acesso Condicional para ativar ou desativar a MFA para grupos de usuários selecionados. A MFA será ativada para todos e nunca poderá ser desativada. Sempre que entrar no Microsoft 365 nesse locatário de avaliação como um dos usuários fictícios, você precisará entrar com a conta e senha de usuário E uma segunda forma de autenticação. Seu instrutor irá orientar você ao longo do processo de MFA que está atualmente implementado no locatário.
 
-
-### Tarefa 1: obter suas credenciais do Microsoft 365
-
-Assim que iniciar o laboratório, você poderá acessar o locatário de avaliação gratuito do Microsoft 365 fornecido pelo seu provedor de hospedagem de laboratório no ambiente do Microsoft Virtual Lab. Dentro deste locatário, seu provedor de hospedagem de laboratório criou uma conta de usuário do Microsoft 365 para um administrador de locatário padrão chamado MOD Administrator. O provedor de hospedagem de laboratório atribuiu a essa conta de usuário um nome de usuário e senha exclusivos, e a conta recebeu a função de Administrador global do Microsoft 365. Você deve recuperar esse nome de usuário e senha para que possa entrar no Microsoft 365 dentro do ambiente do Microsoft Virtual Lab. Você também receberá um nome de locatário e um prefixo de locatário. Você também usará essas informações em várias tarefas ao longo dos laboratórios deste curso.
-
-Como esse curso pode ser oferecido por parceiros de aprendizagem que usam diferentes provedores de hospedagem de laboratório autorizados, as etapas exatas envolvidas para recuperar o nome UPN e a ID do locatário correspondentes ao seu locatário podem variar conforme o provedor de hospedagem de laboratório. Portanto, seu instrutor fornecerá as instruções necessárias sobre como recuperar essas informações para o seu curso. <br/>
-
-Você deve anotar as seguintes informações fornecidas pelo provedor de hospedagem do seu laboratório para uso posterior:
-
-- **Nome de Usuário Administrativo.** Quando uma empresa compra uma assinatura do Microsoft 365, a Microsoft cria uma conta de administrador padrão no locatário da empresa e lhe atribui a função de Administrador Global. A pessoa que se inscreve para ter uma assinatura do Microsoft 365 normalmente é quem recebe essa conta de Administrador Global padrão. Nesse locatário de avaliação, o provedor de hospedagem do seu laboratório atribuiu a essa conta o nome de Administrador MOD, o **Nome de Usuário Administrativo** e a **Senha Administrativa**. O Nome de Usuário Administrativo atribuído a essa conta é **admin@{nome de locatário}**. 
-
-- **Senha Administrativa.** Essa é a senha que o provedor de hospedagem do seu laboratório atribuiu à conta do **Administrador MOD**. Posteriormente, neste laboratório, você vai criar outra conta de Administrador Global para **Holly Dickson**. Para fins de conveniência no laboratório, você atribuirá essa mesma **senha Administrativa** à conta da Holly. Somente a Holly e o Administrador MOD usarão essa **Senha Administrativa**.
-
-- **Nome do locatário.** Esse é o domínio de locatário do locatário de avaliação que foi atribuído ao seu ambiente de laboratório de VM. Você usará esse nome de locatário ao entrar no Microsoft 365 e no PowerShell usando várias contas de usuário em todos os laboratórios ao longo deste curso. O nome do locatário está no formato **xxxxxZZZZZZ.onmicrosoft.com**, em que xxxxxZZZZZZ é o prefixo do locatário e onmicrosoft.com é o nome do domínio. O nome do domínio é o domínio associado aos seus serviços do Microsoft 365. Quando qualquer uma das etapas do laboratório orienta você a entrar no Microsoft 365 ou no PowerShell como uma das contas de usuário, você deve inserir o alias do usuário seguido desse nome de locatário. Por exemplo, se o prefixo do seu locatário fosse WWLx123456, ao entrar como Holly Dickson você deveria inserir Holly@WWLx123456.onmicrosoft.com.
-
-- **Prefixo do locatário.** O domínio para cada conta de usuário do Microsoft 365 está no formato de {user alias}@xxxxxZZZZZZ.onmicrosoft.com, onde xxxxxZZZZZZ é o prefixo do locatário. O nome consiste de duas partes: o prefixo do provedor de hospedagem do seu laboratório (xxxxx; alguns provedores de hospedagem usam um prefixo genérico, como M365x, enquanto outros usam as iniciais da empresa ou alguma outra designação) e a ID do locatário (ZZZZZZ; de modo geral um número de 6 dígitos). 
-
- - **Senha do Usuário**. Seu locatário de avaliação inclui várias contas de usuário predefinidas. Uma dessas contas é a de Administrador MOD, que é a conta de Administrador Global que foi criada para o seu locatário de avaliação. O provedor de hospedagem do seu laboratório atribuiu a **Senha Administrativa** a essa conta. A **Senha do Usuário**, por outro lado, é a senha que o provedor de hospedagem do seu laboratório atribuiu a todas as outras contas de usuário predefinidas que criou. Portanto, todas as outras contas de usuário predefinidas que estão na lista de ** Usuários Ativos** — muitas das quais você usará ao longo dos laboratórios neste curso — usarão essa **Senha do Usuário** que lhes foi atribuída. Você precisa usar essa senha ao entrar como qualquer um desses usuários, como Alex Wilber, Joni Sherman, Lynne Robbins e assim por diante.
-
-
-### Tarefa 2: configurar o perfil Organizacional da Adatum
+### Tarefa 1: configurar o perfil Organizacional da Adatum
 
 Ao longo dos laboratórios deste curso, você desempenhará o papel de Holly Dickson, a administradora do Microsoft 365 da Adatum. Como Holly, você será responsável por configurar o perfil da empresa para seu locatário de avaliação do Microsoft 365. Nesta tarefa, você configurará as opções necessárias para o locatário da Adatum. Como a Holly ainda não criou uma conta de usuário pessoal do Microsoft 365 para si mesma (o que será feito no próximo exercício de laboratório), ela entrará inicialmente no Microsoft 365 usando a conta de administrador de locatário padrão do Microsoft 365 e a senha que foi criada pelo seu provedor de hospedagem de laboratório. Essa conta é a **MOD Administrator**, cujo alias é "admin". O nome de usuário dessa conta é **admin@xxxxxZZZZZZ.onmicrosoft.com** (onde xxxxxZZZZZZ o prefixo do locatário atribuído pelo seu provedor de hospedagem de laboratório); o nome de exibição para essa conta será MOD Administrator.
 
@@ -55,9 +34,9 @@ Ao longo dos laboratórios deste curso, você desempenhará o papel de Holly Dic
 
 5. Na caixa de diálogo de **Login** que aparece, insira o **Nome de Usuário Administrativo** fornecido pelo provedor de hospedagem do seu laboratório (essa é a conta do Administrador MOD). O nome de usuário deve estar no formato de **admin@xxxxxZZZZZZ.onmicrosoft.com**, onde xxxxxZZZZZZ é o prefixo do locatário atribuído pelo seu provedor de hospedagem de laboratório. Selecione **Avançar**. <br/>
 
-    **Observação:** Seu serviço de hospedagem de laboratório pode fornecer a capacidade de selecionar um botão **Digitar texto** (ou equivalente) ao lado dos dados do recurso, como nomes de usuário, senhas, comandos do PowerShell e outros dados que devem ser inseridos ao longo desses laboratórios. Outros provedores de hospedagem de laboratório podem fornecer um método alternativo, como a possibilidade de copiar e colar essas informações. Aproveite essa funcionalidade para não ter que inserir manualmente essas informações. 
+    **Observação:** Nas instruções de laboratório que aparecem em seu ambiente de laboratório de VM, seu provedor de hospedagem de laboratório pode fornecer a capacidade de selecionar um botão **Digitar texto** (ou equivalente) ao lado dos dados do recurso, como nomes de usuário, senhas, comandos do PowerShell e outros dados que devem ser inseridos ao longo desses laboratórios. Outros provedores de hospedagem de laboratório podem fornecer um método alternativo, como a possibilidade de copiar e colar essas informações. Aproveite essa funcionalidade para não ter que inserir manualmente essas informações. 
 
-6. Na caixa de diálogo **Inserir senha**, insira a **Senha Administrativa** exclusiva fornecida pelo provedor de hospedagem do seu laboratório e, em seguida, selecione **Entrar**. Se necessário, execute o processo de login com MFA.
+6. Na caixa de diálogo **Inserir senha**, insira a **Senha Administrativa** fornecida pelo provedor de hospedagem do seu laboratório e, em seguida, selecione **Entrar**. Se necessário, execute o processo de login com MFA.
 
 7. Na caixa de diálogo **Permanecer conectado?** selecione a caixa de seleção **Não mostrar novamente** e, em seguida, selecione **Sim**. Na caixa de diálogo **Salvar senha** que aparece, selecione **Nunca**.
 
@@ -101,7 +80,7 @@ Ao longo dos laboratórios deste curso, você desempenhará o papel de Holly Dic
 
 17. Permaneça conectado à **LON-CL1** com o Microsoft Edge aberto no **Centro de administração do Microsoft 365** para realizar a próxima tarefa.
 
-### Tarefa 3: criar um tema personalizado para a equipe do projeto piloto da Adatum
+### Tarefa 2: criar um tema personalizado para a equipe do projeto piloto da Adatum
 
 Na tarefa anterior, você aprendeu que, quando alguém está conectado ao Microsoft 365, o sistema exibirá a fotografia dessa pessoa (se fornecida) ou suas iniciais, caso não haja foto. Holly Dickson, administradora do Microsoft 365 da Adatum, não está satisfeita em ver apenas uma imagem ou as iniciais do usuário conectado. Ela quer criar um tema personalizado para os membros de sua equipe do projeto piloto, para que o nome do usuário conectado também seja exibido. Ao final do projeto piloto, se os membros da equipe de projeto piloto preferirem esse design, ela configurará essa mesma opção no tema padrão para que seja aplicado a todos os usuários. 
 
@@ -185,7 +164,7 @@ Os temas personalizados devem ser associados a um ou mais grupos do Microsoft 36
 
 28. Permaneça conectado à **LON-CL1** com o Microsoft Edge aberto no **Centro de administração do Microsoft 365** para realizar a próxima tarefa.
 
-### Tarefa 4 – Instalar o Microsoft Graph PowerShell 
+### Tarefa 3: Instalar o PowerShell do Microsoft Graph 
 
 O Microsoft Graph PowerShell é necessário para realizar várias tarefas de configuração durante a instalação do Microsoft 365. Como os próximos exercícios de laboratório farão uso do Windows PowerShell para executar essas tarefas, o primeiro passo é instalar o módulo do Microsoft Graph PowerShell. Este módulo permite que você realize várias tarefas de administração de usuários e da organização do Microsoft 365 através do PowerShell. É ótimo para tarefas em massa, como redefinições de senha, políticas de senha, gerenciamento de licenças e relatórios, entre outros.  
 
