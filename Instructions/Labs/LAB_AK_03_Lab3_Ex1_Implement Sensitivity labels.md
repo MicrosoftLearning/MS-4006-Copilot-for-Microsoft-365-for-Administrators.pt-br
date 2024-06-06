@@ -2,7 +2,7 @@
 
 Em sua função como Holly Dickson, nova Administradora do Microsoft 365 do Adatum, você tem o Microsoft 365 implantado em um ambiente de laboratório virtualizado. À medida que você prossegue com seu projeto piloto do Microsoft 365, suas próximas etapas são implementar rótulos de confidencialidade com o Microsoft Entra ID Protection no Adatum. Neste laboratório, você criará e publicará um rótulo e testará um rótulo publicado. No entanto, ao fazer isso, você não testará o rótulo criado neste laboratório. Em vez disso, você testará um rótulo diferente.
 
-**Importante:** Quando você publica um novo rótulo de confidencialidade e uma política de rótulo, pode demorar até 24 horas para propagar por meio do Microsoft 365. Sendo assim, você não conseguirá testar o rótulo criado neste laboratório. Em vez disso, você testará um rótulo de confidencialidade pré-existente chamado **Project – Falcon**. Esse rótulo pré-existente é quase idêntico ao rótulo que você criará, portanto, você poderá ver os mesmos resultados se tiver conseguido testar o rótulo criado. 
+**Importante:** Quando você publica um novo rótulo de confidencialidade e uma política de rótulo, pode demorar até 24 horas para propagar por meio do Microsoft 365. Sendo assim, você não conseguirá testar o rótulo criado neste laboratório. Em vez disso, você testará um rótulo de confidencialidade pré-existente chamado **Project – Falcon**. Esse rótulo pré-existente é quase idêntico ao rótulo que você criará, então você basicamente poderá ver os mesmos resultados se tivesse testado o rótulo que criou. 
 
 
 ### Tarefa 1 – Instalar o cliente de rotulagem unificada do Microsoft Entra ID Protection
@@ -335,5 +335,7 @@ Para verificar se a proteção atribuída ao documento funciona, envie primeiro 
 
     **Observação:**  Nesta tarefa, você acabou de verificar se o Microsoft Entra ID Protection protegeu o documento com base nos parâmetros de política de PII que você configurou. Quando Joni recebeu a permissão de Somente Exibição, o documento foi aberto no modo de exibição Leitura e ela não pôde alterá-lo. Quando Joni recebeu a permissão de Edição, o documento foi aberto no Word e ela pôde alterá-lo. E como Holly não compartilhou o documento com você, você não pôde abri-lo quando ela enviou o documento por email para sua caixa de correio pessoal. 
 
+## Fim do laboratório 3
 
-## Parabéns! Você acabou de concluir o laboratório final neste curso.
+
+# Parabéns! Você acabou de concluir o laboratório final neste curso.
