@@ -183,45 +183,52 @@ Em vez disso, você testará um dos rótulos de confidencialidade pré-existente
 
 1. No LON-CL1, no navegador Edge, você deve continuar conectado no Microsoft 365 como **Holly Dickson**.
 
-2. Para validar o rótulo de confidencialidade **Project-Falcon**, primeiro você deve atribuí-lo a um documento. Selecione a guia **Página Inicial | Microsoft 365** no navegador para retornar à página inicial do Microsoft 365. Selecione o ícone **Aplicativos** no lado esquerdo da tela. Na página **Aplicativos** que aparece, clique com o botão direito do mouse no bloco **Word** e selecione **Abrir em nova guia**. 
+2. Você primeiro revisará o rótulo de confidencialidade do **Project-Falcon** que aplicará a um documento nessa tarefa.  No seu navegador Edge, você ainda deve ter uma guia aberta para o portal **Microsoft Purview** da tarefa anterior. No portal **Microsoft Purview**, no grupo **Proteção de informações** no painel de navegação esquerdo, selecione **Rótulos**. 
 
-3. Na guia **Word | Microsoft 365**, na seção **Criar** na parte superior da página, selecione **Documento em branco**.
+3. Na página **Rótulos**, na lista de rótulos, selecione a seta para a direita (**>**) ao lado de **Altamente Confidencial** para mostrar os sub-rótulos sob esse rótulo. Fazer isso exibe o rótulo **Project - Falcon** pré-existente.
 
-4. Se uma janela **Sua opção de privacidade** aparecer, selecione **Fechar**.
+4. Selecione o rótulo **Projeto - Falcon** (não a caixa de seleção; selecione o nome do rótulo). Fazer isso abre um painel de detalhes **Projeto - Falcon**. Revise as informações definidas para esse rótulo e feche o painel quando terminar.  
 
-5. Se a faixa de opções do Word exibir ícones para cada recurso, mas não dividir os ícones por grupo, selecione a seta para baixo no lado direito da faixa de opções e, em seguida, no **Layout da faixa de opções**, selecione **Faixa de opções clássica**. Isso mudará a faixa de opções para o estilo tradicional que é dividido por grupo de recursos (como Desfazer, Área de Transferência, Fonte, Parágrafo, Estilos e assim por diante).
+5. Agora você atribuirá o rótulo de confidencialidade do **Project-Falcon** a um documento. Selecione a guia **Página Inicial | Microsoft 365** no navegador para retornar à página inicial do Microsoft 365. Selecione o ícone **Aplicativos** no lado esquerdo da tela. Na página **Aplicativos** que aparece, clique com o botão direito do mouse no bloco **Word** e selecione **Abrir em nova guia**. 
 
-6. No documento do **Word**, digite o seguinte texto: **Testar um rótulo de confidencialidade em um documento com informações de identificação pessoal (PII); nesse caso, um número do seguro social dos EUA: 111-11-1111.**
+6. Na guia **Word | Microsoft 365**, na seção **Criar** na parte superior da página, selecione **Documento em branco**.
 
-7. Como você habilitou rótulos de Confidencialidade no início deste exercício, **Word** deve exibir um grupo de **Confidencialidade** na faixa de opções na parte superior da página. Selecione a seta para baixo no grupo de **Confidencialidade**. No menu suspenso exibido, ele deve exibir a lista de tipos de rótulo de confidencialidade. Selecione **Altamente Confidencial** e, no submenu exibido, selecione **Project – Falcon**. <br/>
+7. Se uma janela **Sua opção de privacidade** aparecer, selecione **Fechar**.
 
-    **Observação:** Após 24 horas, o rótulo que você criou na tarefa anterior aparecerá no sub-menu Altamente Confidencial, ao lado do rótulo Project-Falcon. Mas, por enquanto, você usará o rótulo **Project – Falcon** em seu lugar.
+8. Se a faixa de opções do Word exibir ícones para cada recurso, mas não dividir os ícones por grupo, selecione a seta para baixo no lado direito da faixa de opções e, em seguida, no **Layout da faixa de opções**, selecione **Faixa de opções clássica**. Isso mudará a faixa de opções para o estilo tradicional que é dividido por grupo de recursos (como Desfazer, Área de Transferência, Fonte, Parágrafo, Estilos e assim por diante).
 
-8. No documento, observe como o rótulo aplicou uma marca d'água **CONFIDENCIAL – ProjectFalcon** na parte superior do documento. O rótulo Project – Falcon foi configurado exatamente como o rótulo que você criou, onde a marca d'água deveria aparecer de forma diagonal no meio da página. Então, por que ela aparece na parte superior da página? A resposta é que você está usando o **Word para a web**, que por padrão a exibe como você vê aqui. Para ver como ela será exibida para alguém que está lendo o documento, você deve ver o documento no **Modo de Exibição de Leitura**, o que você fará agora. <br/>
+9. No documento do **Word**, digite o seguinte texto: **Testar um rótulo de confidencialidade em um documento com informações de identificação pessoal (PII); nesse caso, um número do seguro social dos EUA: 111-11-1111.**
+
+10. Como você habilitou rótulos de Confidencialidade no início deste exercício, **Word** deve exibir um grupo de **Confidencialidade** na faixa de opções na parte superior da página. Selecione a seta para baixo no grupo de **Confidencialidade**. No menu suspenso exibido, ele deve exibir a lista de tipos de rótulo de confidencialidade. Selecione **Altamente Confidencial** e, no submenu exibido, selecione **Project – Falcon**. <br/>
+
+    **Observação:** Após 24 horas, o rótulo que você criou na tarefa anterior aparecerá no submenu Altamente Confidencial, próximo ao rótulo Project-Falcon. Mas, por enquanto, você usará o rótulo **Project – Falcon** em seu lugar.
+
+11. No documento, observe como o rótulo aplicou uma marca d'água **CONFIDENCIAL – ProjectFalcon** na parte superior do documento. O rótulo Project – Falcon foi configurado exatamente como o rótulo que você criou, onde a marca d'água deveria aparecer de forma diagonal no meio da página. Então, por que ela aparece na parte superior da página? A resposta é que você está usando o **Word para a web**, que por padrão a exibe como você vê aqui. Para ver como ela será exibida para alguém que está lendo o documento, você deve ver o documento no **Modo de Exibição de Leitura**, o que você fará agora. <br/>
 
     Selecione a guia **Exibir** e, na faixa de opções do Word, selecione **Modo de Exibição de Leitura**. Observe como a marca d'água aparece de forma diagonal no meio do documento. É assim que a marca d'água aparecerá para alguém lendo o documento. Observe que, se você usar o aplicativo do Word para área de trabalho, ele exibirá a marca d'água como designada pelo rótulo, que nesse caso seria exatamente como você a vê aqui no Modo de Exibição de Leitura. <br/>
 
     Para sair do Modo de Exibição de Leitura, selecione **Editar Documento** na barra de menus na parte superior da página. No menu suspenso exibido, selecione **Editar**.
 
-9. Neste primeiro teste de validação, você removerá esse rótulo de confidencialidade de ser aplicado a este documento. Uma das opções de política de rótulo exige que os usuários forneçam justificativa para remover um rótulo ou selecionar um rótulo de classificação inferior. Agora você verificará se essa configuração está funcionando corretamente. <br/>
+12. Neste primeiro teste de validação, você removerá esse rótulo de confidencialidade de ser aplicado a este documento. Uma das opções de política de rótulo exige que os usuários forneçam justificativa para remover um rótulo ou selecionar um rótulo de classificação inferior. Agora você verificará se essa configuração está funcionando corretamente. <br/>
 
     No grupo de **Confidencialidade** na faixa de opções do Word, selecione a seta para baixo. No menu suspenso exibido, observe que uma marca de seleção aparece ao lado de **Altamente Confidencial**. Mantenha o mouse sobre **Altamente Confidencial** para ver o submenu. Observe como uma marca de seleção aparece ao lado de **Project – Falcon**. As marcas de seleção identificam o rótulo atual que está sendo aplicado ao documento.  <br/>
  
     Para remover o rótulo deste documento, selecione o rótulo **Project – Falcon** que aparece neste menu suspenso.
     
-10. Na janela exibida **Justificativa necessária**, selecione a opção **Outro (explicar)**. No campo **Explicar por que você está alterando esse rótulo**, insira **Testando o que acontece quando um rótulo é removido de um documento** e selecione **Alterar**.
+13. Na janela exibida **Justificativa necessária**, selecione a opção **Outro (explicar)**. No campo **Explicar por que você está alterando esse rótulo**, insira **Testando o que acontece quando um rótulo é removido de um documento** e selecione **Alterar**.
 
-11. Observe como a marca d'água no documento desapareceu. No grupo de **Confidencialidade** na faixa de opções do Word, selecione a seta para baixo. No menu suspenso exibido, observe que, embora **Altamente confidencial** > **Project – Falcon** seja exibido, nenhuma marca de seleção será exibida ao lado deles. Isso indica que o rótulo de confidencialidade não está mais sendo aplicado a este documento.  
+14. Observe como a marca d'água no documento desapareceu. No grupo de **Confidencialidade** na faixa de opções do Word, selecione a seta para baixo. No menu suspenso exibido, observe que, embora **Altamente confidencial** > **Project – Falcon** seja exibido, nenhuma marca de seleção será exibida ao lado deles. Isso indica que o rótulo de confidencialidade não está mais sendo aplicado a este documento.  
 
-12. Para aplicar novamente o rótulo de confidencialidade ao documento, selecione **Altamente Confidencial** > **Project – Falcon** no menu suspenso. Observe como a marca d'água reapareceu no documento.
+15. Para aplicar novamente o rótulo de confidencialidade ao documento, selecione **Altamente Confidencial** > **Project – Falcon** no menu suspenso. Observe como a marca d'água reapareceu no documento.
 
-13. Agora você salvará o documento para poder compartilhá-lo na próxima tarefa. Um campo de nome de documento que contém uma seta suspensa aparece no canto superior esquerdo da página, à direita do ícone do Word (o Word pode exibir **Documento** ou **Documento1** como o nome do arquivo temporário). Selecione a seta suspensa. No menu suspenso exibido, garanta que no arquivo **Localização** esteja escrito **Holly Dickson > Documentos**. <br/>
+16. Agora você salvará o documento para poder compartilhá-lo na próxima tarefa. Um campo de nome de documento que contém uma seta suspensa aparece no canto superior esquerdo da página, à direita do ícone do Word (o Word pode exibir **Documento** ou **Documento1** como o nome do arquivo temporário). Selecione a seta suspensa. No menu suspenso exibido, garanta que no arquivo **Localização** esteja escrito **Holly Dickson > Documentos**. <br/>
 
     No campo **Nome do Arquivo**, renomeie o arquivo para **DocumentoProtegido1** e selecione fora desse menu de nome de arquivo (selecione dentro do documento). Observe que o novo nome atribuído ao arquivo aparece na barra de título. 
 
-14. Deixe a guia **DocumentoProtegido1** aberta mostrando o documento. Você retornará a este documento na próxima tarefa para compartilhar o documento com Joni Sherman.
+17. Deixe a guia **DocumentoProtegido1** aberta mostrando o documento. Você retornará a este documento na próxima tarefa para compartilhar o documento com Joni Sherman.
 
-Você acabou de criar com sucesso um documento do Word que contém a política de rótulo Altamente Confidencial intitulada Project – Falcon. 
+Você acabou de criar com sucesso um documento do Word contendo o rótulo Altamente Confidencial intitulado **Projeto - Falcon**. 
+
 
 ### Tarefa 4 – Proteger um documento usando o Microsoft Entra ID Protection
 
