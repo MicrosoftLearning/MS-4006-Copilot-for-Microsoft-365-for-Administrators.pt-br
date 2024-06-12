@@ -183,7 +183,7 @@ Em vez disso, você testará um dos rótulos de confidencialidade pré-existente
 
 1. No LON-CL1, no navegador Edge, você deve continuar conectado no Microsoft 365 como **Holly Dickson**.
 
-2. Você primeiro revisará o rótulo de confidencialidade do **Project-Falcon** que aplicará a um documento nessa tarefa.  No seu navegador Edge, você ainda deve ter uma guia aberta para o portal **Microsoft Purview** da tarefa anterior. No portal **Microsoft Purview**, no grupo **Proteção de informações** no painel de navegação esquerdo, selecione **Rótulos**. 
+2. Você primeiro revisará o rótulo de confidencialidade do **Project-Falcon** que aplicará a um documento nessa tarefa.  No seu navegador Edge, você ainda deve ter uma guia aberta para o portal **Microsoft Purview** da tarefa anterior. No portal do **Microsoft Purview**, no grupo **Proteção de informações** do painel de navegação, selecione **Rótulos**. 
 
 3. Na página **Rótulos**, na lista de rótulos, selecione a seta para a direita (**>**) ao lado de **Altamente Confidencial** para mostrar os sub-rótulos sob esse rótulo. Fazer isso exibe o rótulo **Project - Falcon** pré-existente.
 
@@ -244,7 +244,7 @@ Para verificar se a proteção atribuída ao documento funciona, envie primeiro 
 
 4. No **Outlook na web**, selecione **Novo email** na parte superior esquerda da tela.
 
-5. No painel direito, insira as seguintes informações no formulário de email:
+5. Insira as seguintes informações no formulário do email:
 
     - Para: Insira **Joni** e selecione **Joni Sherman** na lista de usuários. 
 

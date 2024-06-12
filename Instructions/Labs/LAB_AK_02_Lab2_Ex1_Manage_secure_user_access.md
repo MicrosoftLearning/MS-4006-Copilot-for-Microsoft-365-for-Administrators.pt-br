@@ -118,11 +118,11 @@ Em uma tarefa anterior, você criou um grupo do Microsoft 365 para os membros da
 
 6. Se uma caixa de diálogo **Bem-vindo ao Microsoft 365** aparecer no meio da tela, não existirá uma opção para fechá-la. Em vez disso, à direita da janela, selecione o ícone de seta para a frente (**>**) duas vezes e, em seguida, selecione o ícone de marca de seleção para avançar pelos slides nessa janela de mensagens. 
 
-7. Se uma janela **Criar com o Microsoft 365** aparecer, selecione o **X** no canto superior direito da janela para fechá-la. 
+7. Se uma janela **Criar com o Microsoft 365** aparecer, selecione o **X** no canto superior da janela para fechá-la. 
 
 8. A página **Bem-vindo ao Microsoft 365** aparece no seu navegador Edge, na guia **Página Inicial | Microsoft 365**. Essa é a página inicial do Microsoft 365 da Holly. Observe que as iniciais de Holly aparecem no canto superior direito da tela; o nome de Holly, no entanto, não é exibido. Isso ocorre porque a conta da Holly não existia no momento em que você adicionou os usuários do projeto piloto do Microsoft 365 ao grupo associado ao tema personalizado no exercício de laboratório anterior. Já que a Holly quer ver seu nome na parte superior de cada janela do Microsoft 365 quando estiver conectada ao sistema, ela primeiro vai querer adicionar sua conta ao grupo de usuários do projeto piloto do Microsoft 365. <br>
 
-    Na coluna de ícones de aplicativos que aparece no lado esquerdo da tela, selecione **Administrador**. Isso abre o **centro de administração do Microsoft 365** em uma nova guia do navegador. 
+    Na coluna de ícones de aplicativo que aparece no painel de navegação na lateral da tela, selecione **Administrador**. Isso abre o **centro de administração do Microsoft 365** em uma nova guia do navegador. 
 
 9. No **centro de administração do Microsoft 365**, selecione **Equipes e grupos** no painel de navegação e, em seguida, selecione no painel **Equipes e grupos ativos**. 
 
@@ -130,7 +130,7 @@ Em uma tarefa anterior, você criou um grupo do Microsoft 365 para os membros da
 
 11. No painel do **projeto piloto do M365** que aparece, a guia **Geral** é exibida por padrão. Selecione a guia **Filiação**.
 
-12. Na guia **Filiação**, a subguia **Proprietários** é exibida por padrão no painel de navegação que aparece no lado esquerdo do painel. Selecione a subguia **Membros** que aparece abaixo dela.
+12. Na guia **Afiliação**, a subguia **Proprietários** é exibida por padrão no painel de navegação que aparece no lado esquerdo do painel. Selecione a subguia **Membros** que aparece abaixo dela.
 
 13. Na sub-guia **Membros**, selecione **+Adicionar membros**.
 
@@ -256,17 +256,17 @@ O Diretor de Tecnologia está ansioso para implementar o Bloqueio Inteligente po
 
 3. No LON-DC1, o **Gerenciador do Servidor** é iniciado automaticamente na inicialização. No **Gerenciador do Servidor**, selecione **Ferramentas** na barra de menus do canto superior direito e, no menu suspenso, selecione **Gerenciamento de Política de Grupo**. Maximize a janela **Gerenciamento de Política de Grupo** que aparece.
 
-4. Você vai querer editar a política de grupo que inclui a política de bloqueio de conta da sua organização. Se necessário, na árvore do console raiz no painel do lado esquerdo, expanda **Forest:Adatum.com**, expanda **Domínios**e, a seguir, expanda **Adatum.com**.  <br/>
+4. Você vai querer editar a política de grupo que inclui a política de bloqueio de conta da sua organização. Se necessário, na árvore de console raiz no painel do lado esquerdo, expanda **Forest:Adatum.com**, expanda **Domínios**e, a seguir, expanda **Adatum.com**.  <br/>
 
     Em **Adatum.com**, clique com o botão direito do mouse na **Política de Domínio Padrão** e selecione **Editar** no menu.
 
 5. Maximize a janela **Editor de Gerenciamento de Política de Grupo** que aparece.
 
-6. Na árvore **Política de Domínio Padrão** no painel do lado esquerdo, em **Configuração do Computador**, expanda **Políticas**, expanda **Configurações do Windows**, expanda **Configurações de Segurança** e, a seguir, expanda **Políticas de Conta**.
+6. Na árvore **Política de Domínio Padrão** no painel lateral, em **Configuração do Computador**, expanda **Políticas**, expanda **Configurações do Windows**, expanda **Configurações de Segurança** e, a seguir, expanda **Políticas de Conta**.
 
 7. Na pasta **Políticas de Contas**, selecione **Política de Bloqueio de Contas**.
 
-8. Como você pode ver no painel do lado direito, nenhum dos parâmetros do bloqueio inteligente foi definido. Em vez de fazer a manutenção desses parâmetros de bloqueio no Editor de Gerenciamento de Política de Grupo, você vai usar o centro de administração do Microsoft Entra. Embora você possa usar o Editor de Gerenciamento de Política de Grupo, esse método costuma ser mais usado em ambientes locais do Active Directory. Mostramos esse editor para que você pudesse ver essa alternativa. No entanto, para as organizações que usam estritamente serviços baseados em nuvem como o Microsoft 365, ou que acham que usar o centro de administração do Microsoft Entra é muito mais fácil do que acessar o Editor de Gerenciamento de Política de Grupo, pode ser preferível usar o **centro de administração do Microsoft Entra** para atribuir os valores correspondentes no contexto do Entra ID. <br/>  
+8. Como você pode ver no painel que aparece, nenhum dos parâmetros do bloqueio inteligente foi definido. Em vez de fazer a manutenção desses parâmetros de bloqueio no Editor de Gerenciamento de Política de Grupo, você vai usar o centro de administração do Microsoft Entra. Embora você possa usar o Editor de Gerenciamento de Política de Grupo, esse método costuma ser mais usado em ambientes locais do Active Directory. Mostramos esse editor para que você pudesse ver essa alternativa. No entanto, para as organizações que usam estritamente serviços baseados em nuvem como o Microsoft 365, ou que acham que usar o centro de administração do Microsoft Entra é muito mais fácil do que acessar o Editor de Gerenciamento de Política de Grupo, pode ser preferível usar o **centro de administração do Microsoft Entra** para atribuir os valores correspondentes no contexto do Entra ID. <br/>  
 
     Lembre-se também de que o comportamento do bloqueio e as opções de personalização dos dois métodos são diferentes. Com o Editor de Gerenciamento de Política de Grupo, você tem um controle mais granular sobre as configurações das políticas, incluindo o Limite de Bloqueios de Conta, a Duração do Bloqueio e Redefinir o Contador do Bloqueio de Conta Após. No entanto, usar esse método requer familiaridade com Políticas de Grupo e a administração do Active Directory. A Política de Bloqueio de Contas no Microsoft Entra, por outro lado, não pode ser personalizada tão amplamente mas é mais fácil de usar, embora não tenha algumas das opções de ajuste fino disponíveis na Política de Grupo. <br/>
 
@@ -276,7 +276,7 @@ O Diretor de Tecnologia está ansioso para implementar o Bloqueio Inteligente po
 
 10. Na caixa de diálogo **Entrar**, você precisa entrar como Holly Dickson. Insira **Holly@xxxxxZZZZZZ.onmicrosoft.com**, em que xxxxxZZZZZZ é o prefixo de locatário atribuído pelo provedor de hospedagem do seu laboratório. Selecione **Avançar**. <br/>
 
-11. Na caixa de diálogo **Inserir senha**, insira a **Senha Administrativa** exclusiva fornecida pelo provedor de hospedagem do seu laboratório e, em seguida, selecione **Entrar**. Se necessário, conclua o processo de login do MFA.
+11. Na caixa de diálogo **Inserir senha**, insira a **Senha Administrativa** exclusiva fornecida pelo provedor de hospedagem do seu laboratório e, em seguida, selecione **Entrar**. Se necessário, execute o processo de login com MFA.
 
 12. Na caixa de diálogo **Permanecer conectado?** selecione a caixa de seleção **Não mostrar novamente** e, em seguida, selecione **Sim**. Na caixa de diálogo **Salvar senha** que aparece, selecione **Nunca**.
 
@@ -284,7 +284,7 @@ O Diretor de Tecnologia está ansioso para implementar o Bloqueio Inteligente po
 
 14. Se uma janela **Localizar mais aplicativos** ou uma janela **Criar com o Microsoft 365** aparecerem, selecione o **X** no canto superior direito dessas janelas para fechá-las. 
 
-15. Na página **Bem-vindo ao Microsoft 365**, na lista de ícones de aplicativos que aparece no painel do lado esquerdo, selecione **Administrador**; isso abrirá o **centro de administração do Microsoft 365** em uma nova guia do navegador. 
+15. Na página **Bem-vindo ao Microsoft 365**, na lista de ícones de aplicativos que aparece no painel da janela lateral, selecione **Administrador**; isso abrirá o **centro de administração do Microsoft 365** em uma nova guia do navegador. 
 
 16. No **Centro de administração do Microsoft 365**, selecione **Mostrar tudo** no painel de navegação. Em **Centros de administração**, selecione **Identidade**, que mostrará o **centro de administração do Microsoft Entra** em uma nova guia.
 
