@@ -11,7 +11,7 @@ A Holly Dickson recebeu a função de Administradora Global do Microsoft 365. Co
 
     Alterne para **LON-CL1**. 
 
-2. No **LON-CL1**, no **Centro de administração do Microsoft 365** em seu navegador Edge, você deve continuar conectado como Holly Dickson do exercício de laboratório anterior. No painel de navegação esquerdo, selecione **Usuários** e, em seguida, selecione **Usuários Ativos**. 
+2. No **LON-CL1**, no **Centro de administração do Microsoft 365** em seu navegador Edge, você deve continuar conectado como Holly Dickson do exercício de laboratório anterior. No painel de navegação, selecione **Usuários** e, em seguida, **Usuários Ativos**. 
 
 3. Na lista de **Usuários ativos**, selecione **Diego Siciliani**.  <br/>
 
@@ -222,11 +222,11 @@ Nesta tarefa, você irá começar examinando as propriedades administrativas de 
 
 14. Se aparecer uma caixa de diálogo **Bem-vindo ao Microsoft 365** no meio da página, selecione a seta para frente (>) duas vezes e, em seguida, a marca de seleção para fechá-la.
 
-15. Se aparecer uma janela **Encontrar mais aplicativos**, selecione o **X** no canto superior direito da janela para fechá-la.
+15. Se aparecer uma janela **Encontrar mais aplicativos**, selecione **X** no canto superior da janela para fechá-la.
 
 16. Na janela **Bem-vindo ao Microsoft 365**, que é a página inicial do Microsoft 365 de Joni, um painel de navegação aparece no lado esquerdo da tela que indica os aplicativos aos quais o usuário tem permissão de acesso. Neste painel **Aplicativos**, observe como a opção **Admin** não é exibida. Isso ocorre porque Joni nunca recebeu uma função de administrador do Microsoft 365. 
 
-17. Agora você sairá do Microsoft 365 como Joni. No **Microsoft Edge**, no canto superior direito da página **Bem-vindo ao Microsoft 365**, selecione o ícone de usuário para **Joni Sherman** (o círculo no canto superior direito com a imagem de Joni nele), e na janela **Joni Sherman** que aparece, selecione **Sair**. 
+17. Agora você sairá do Microsoft 365 como Joni. No **Microsoft Edge**, no canto superior direito da página **Bem-vindo(a) ao Microsoft 365**, selecione o ícone do usuário para **Joni Sherman** (o círculo no canto superior com a foto de Joni) e, na janela **Joni Sherman** que aparecerá, selecione **Sair.** 
 
 18. Agora você irá entrar no Microsoft 365 como **Lynne Robbins**. Na guia atual do navegador **Edge**, deve ser exibida uma mensagem indicando **Joni, você está desconectado agora**. Nesta janela, você tem a opção de entrar novamente como Joni ou entrar como um usuário diferente. <br/>
 
@@ -234,7 +234,7 @@ Nesta tarefa, você irá começar examinando as propriedades administrativas de 
 
 19. Se aparecer uma caixa de diálogo **Bem-vindo ao Microsoft 365**, selecione a seta para frente (>) duas vezes e, em seguida, a marca de seleção para fechá-la.
 
-20. Se aparecer uma janela **Encontrar mais aplicativos**, selecione o **X** no canto superior direito da janela para fechá-la.
+20. Se aparecer uma janela **Encontrar mais aplicativos**, selecione **X** no canto superior da janela para fechá-la.
 
 21. Na janela **Bem-vindo ao Microsoft 365**, que é a página inicial do Microsoft 365 de Lynne, observe como o ícone **Admin** é exibido no painel de navegação no lado esquerdo da tela. Esse ícone aparece porque Lynne foi atribuída a uma função de administrador do Microsoft 365. Selecione o ícone **Admin** para abrir o Centro de administração do Microsoft 365.
 
@@ -282,7 +282,7 @@ Nesta tarefa, você irá começar examinando as propriedades administrativas de 
 
 39. No painel **Bloquear entrada** que aparece, verifique se o endereço de email de Alex aparece abaixo do título **Bloquear entrada**. Marque a caixa de seleção **Bloquear a entrada deste usuário** e depois clique em **Salvar alterações**. 
 
-40. A janela **Bloquear entrada** deve exibir uma mensagem indicando que Alex está agora bloqueado de fazer logon (e ninguém pode fazer logon com o nome de usuário de Alex no caso de seu nome de usuário ter sido realmente comprometido). Além disso, Alex será desconectado automaticamente dos serviços da Microsoft dentro de 60 minutos. Selecione o **X** no canto superior direito do painel para fechá-lo. 
+40. A janela **Bloquear entrada** deve exibir uma mensagem indicando que Alex está agora bloqueado de fazer logon (e ninguém pode fazer logon com o nome de usuário de Alex no caso de seu nome de usuário ter sido realmente comprometido). Além disso, Alex será desconectado automaticamente dos serviços da Microsoft dentro de 60 minutos. Selecione **X** no canto superior do painel para fechá-lo. 
 
 41. Lynne acabou de ser informada que o nome de usuário de **Nestor Wilke** também foi potencialmente comprometido. Para bloquear a capacidade de Nestor fazer logon (e impedir que qualquer outra pessoa use seu nome de usuário para fazer logon), repita as etapas de 33 a 36. <br/>
 
@@ -290,7 +290,7 @@ Nesta tarefa, você irá começar examinando as propriedades administrativas de 
 
     Feche o painel **Boquear entrada**.
 
-42. Você anteriormente bloqueou Alex Wilber de poder fazer logon. Para verificar se ele está bloqueado, você irá tentar fazer logon como Alex. Saia do Microsoft 365 selecionando o ícone de usuário de **Lynne Robbins** (o círculo com a imagem de Lynne no canto superior direito) e, na janela de **Lynne Robbins** que aparece, selecione **Sair**. 
+42. Você anteriormente bloqueou Alex Wilber de poder fazer logon. Para verificar se ele está bloqueado, você irá tentar fazer logon como Alex. Faça logoff do Microsoft 365 selecionando o ícone do usuário **Lynne Robbins** (o círculo com a foto de Lynne no canto superior) e, na janela **Lynne Robbins** que aparecerá, selecione **Sair.** 
 
 43. Como melhor prática, feche todas as abas do seu navegador, exceto a aba **Sair**, depois de sair do serviço. Na guia **Sair**, navegue até **https://portal.office.com**. 
 
