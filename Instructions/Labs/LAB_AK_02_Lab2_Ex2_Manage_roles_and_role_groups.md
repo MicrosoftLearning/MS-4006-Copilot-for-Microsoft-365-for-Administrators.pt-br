@@ -212,31 +212,31 @@ Nesta tarefa, você irá começar examinando as propriedades administrativas de 
 
 11. No navegador **Edge**, navegue até **https://portal.office.com**. 
 
-12. Você começará entrando no Microsoft 365 como **Joni Sherman**. Na janela **Entrar**, insira **JoniS@xxxxxZZZZZZ.onmicrosoft.com** (no qual xxxxxZZZZZZ é o prefixo do locatário fornecido pelo provedor de hospedagem do seu laboratório). <br/>
+12. Você começará entrando no Microsoft 365 como **Joni Sherman**. Na janela **Entrar**, insira **JoniS@xxxxxZZZZZZ.onmicrosoft.com** (no qual xxxxxZZZZZZ é o prefixo do locatário fornecido pelo provedor de hospedagem do seu laboratório). Como você está entrando como Joni Sherman, insira esta **Senha do Usuário** fornecida pelo seu provedor de hospedagem de laboratório na janela **Inserir senha**. <br>
 
-    **Importante:** Seu provedor de hospedagem de laboratório atribuiu uma **senha administrativa** à conta do administrador do MOD, e você atribuiu essa mesma **senha administrativa** à conta de Holly Dickson quando a criou. No entanto, seu provedor de hospedagem de laboratório atribuiu uma **Senha de usuário** diferente para todas as outras contas de usuário predefinidas. A partir de agora, ao fazer login como qualquer usuário que não seja o Administrador do MOD ou Holly Dickson, você deverá inserir essa **Senha de usuário** e NÃO a **Senha administrativa**. <br/>
-
-    Como você está fazendo login como Joni Sherman, digite essa **Senha de usuário** na janela **Digite a senha**. Se necessário, conclua o processo de login do MFA.
+    Na caixa de diálogo **Atualizar sua senha** exibida, insira a **Senha do usuário** fornecida pelo provedor de hospedagem do laboratório no campo **Senha atual**. Em seguida, digite a Nova Senha de Usuário nos campos **Nova senha** e **Confirmar senha** e selecione **Entrar**.
 
 13. Na janela **Permanecer conectado?**, marque a caixa de seleção **Não mostrar isso novamente** e depois selecione **Sim**. Se aparecer uma janela **Salvar senha**, selecione **Nunca**.
 
 14. Se aparecer uma caixa de diálogo **Bem-vindo ao Microsoft 365** no meio da página, selecione a seta para frente (>) duas vezes e, em seguida, a marca de seleção para fechá-la.
 
-15. Se aparecer uma janela **Encontrar mais aplicativos**, selecione **X** no canto superior da janela para fechá-la.
+15. Se aparecer uma janela **Encontrar mais aplicativos** ou uma janela **Criar com o Microsoft 365** ou qualquer outra janela do tipo introdutória, selecione o **X** no canto superior da janela para fechá-la.
 
-16. Na janela **Bem-vindo ao Microsoft 365**, que é a página inicial do Microsoft 365 de Joni, um painel de navegação aparece no lado esquerdo da tela que indica os aplicativos aos quais o usuário tem permissão de acesso. Neste painel **Aplicativos**, observe como a opção **Admin** não é exibida. Isso ocorre porque Joni nunca recebeu uma função de administrador do Microsoft 365. 
+16. Na janela **Bem-vindo(a) ao Microsoft 365**, que é a página inicial do Microsoft 365 da Joni, um painel de navegação aparece na lateral da tela indicando os aplicativos que o usuário tem permissão para acessar. Neste painel **Aplicativos**, observe como a opção **Admin** não é exibida. Isso ocorre porque Joni nunca recebeu uma função de administrador do Microsoft 365. 
 
 17. Agora você sairá do Microsoft 365 como Joni. No **Microsoft Edge**, no canto superior direito da página **Bem-vindo(a) ao Microsoft 365**, selecione o ícone do usuário para **Joni Sherman** (o círculo no canto superior com a foto de Joni) e, na janela **Joni Sherman** que aparecerá, selecione **Sair.** 
 
 18. Agora você irá entrar no Microsoft 365 como **Lynne Robbins**. Na guia atual do navegador **Edge**, deve ser exibida uma mensagem indicando **Joni, você está desconectado agora**. Nesta janela, você tem a opção de entrar novamente como Joni ou entrar como um usuário diferente. <br/>
 
-    Selecione **Alternar para uma conta diferente**, e no campo **Endereço de email** que aparece, insira **LynneR@xxxxxZZZZZZ.onmicrosoft.com** (no qual xxxxxZZZZZZ é o prefixo do locatário fornecido pelo provedor de hospedagem do seu laboratório) e então selecione **Entrar**. Na janela **Digite a senha**, digite a **Senha do usuário** fornecida pelo seu provedor de hospedagem de laboratório e selecione **Entrar**. Se necessário, conclua o processo de login do MFA. 
+    Selecione **Alternar para uma conta diferente**, e no campo **Endereço de email** que aparece, insira **LynneR@xxxxxZZZZZZ.onmicrosoft.com** (no qual xxxxxZZZZZZ é o prefixo do locatário fornecido pelo provedor de hospedagem do seu laboratório) e então selecione **Entrar**. Na janela **Digite a senha**, digite a **Senha do usuário** fornecida pelo seu provedor de hospedagem de laboratório e selecione **Entrar**. <br>
+
+    Na caixa de diálogo **Atualizar sua senha** exibida, insira a **Senha do usuário** fornecida pelo provedor de hospedagem do laboratório no campo **Senha atual**. Em seguida, digite a Nova Senha de Usuário nos campos **Nova senha** e **Confirmar senha** e selecione **Entrar**. 
 
 19. Se aparecer uma caixa de diálogo **Bem-vindo ao Microsoft 365**, selecione a seta para frente (>) duas vezes e, em seguida, a marca de seleção para fechá-la.
 
-20. Se aparecer uma janela **Encontrar mais aplicativos**, selecione **X** no canto superior da janela para fechá-la.
+20. Se aparecer uma janela **Encontrar mais aplicativos** ou uma janela **Criar com o Microsoft 365** ou qualquer outra janela do tipo introdutória, selecione o **X** no canto superior da janela para fechá-la.
 
-21. Na janela **Bem-vindo ao Microsoft 365**, que é a página inicial do Microsoft 365 de Lynne, observe como o ícone **Admin** é exibido no painel de navegação no lado esquerdo da tela. Esse ícone aparece porque Lynne foi atribuída a uma função de administrador do Microsoft 365. Selecione o ícone **Admin** para abrir o Centro de administração do Microsoft 365.
+21. Na janela **Bem-vindo(a) ao Microsoft 365**, que é a página inicial do Microsoft 365 da Lynne, observe como o ícone **Administrador** é exibido no painel de navegação na lateral da tela. Esse ícone aparece porque Lynne foi atribuída a uma função de administrador do Microsoft 365. Selecione o ícone **Admin** para abrir o Centro de administração do Microsoft 365.
 
 22. No **Centro de administração do Microsoft 365**, selecione **Usuários** no painel de navegação e depois selecione **Usuários ativos**. 
 
@@ -252,7 +252,7 @@ Nesta tarefa, você irá começar examinando as propriedades administrativas de 
 
     No entanto, agora marque a caixa de seleção **Exigir que este usuário altere a senha quando entrar pela primeira vez** para desmarcá-la. Observe que a mensagem de erro que aparece indicando a senha (Pa55w.rd) contém uma palavra, frase ou série de números que a torna facilmente previsível. Nesse caso, você inseriu uma variação da palavra **password** (ou “senha”, em português), que irá disparar esse erro. O sistema permite que você insira essa senha se forçar o usuário a alterá-la no primeiro acesso. Mas se você não forçar o usuário a inserir uma senha diferente no primeiro acesso, então esta senha não será permitida.
 
-27. Após essas duas tentativas de senha fracassadas, Lynne decidiu permitir que o Microsoft 365 gere automaticamente uma senha. Marque a caixa de seleção **Criar automaticamente uma senha** para que ela exiba uma marca de seleção. <br/>
+27. Após essas duas tentativas de senha fracassadas, Lynne decidiu permitir que o Microsoft 365 gere automaticamente uma senha. Marque a caixa de seleção **Criar automaticamente uma senha** para que ela exiba uma marca de seleção. 
     
 28. A senha que será gerada automaticamente será apenas uma senha temporária porque Lynne deseja forçar Diego a alterá-la na próxima vez que ele fizer logon. Portanto, verifique se a caixa de seleção **Exigir que este usuário altere a senha quando entrar pela primeira vez** exibe uma marca de seleção. Se a caixa estiver desmarcada, então selecione-a para que exiba uma marca de seleção.
 
@@ -264,9 +264,9 @@ Nesta tarefa, você irá começar examinando as propriedades administrativas de 
 
 32. Se uma janela de solicitação de pesquisa aparecer, selecione **Cancelar**.
 
-33. Na lista de **Usuários ativos**, selecione o ícone de **chave (Redefinir uma senha)** para **Pradeep Gupta**. 
+33. Agora você deseja alterar a senha de Pradeep Gupta. Na lista de **Usuários ativos**, selecione o ícone de **chave (Redefinir uma senha)** que aparece à direita de **Pradeep Gupta**. 
 
-34. Na janela **Redefinir senha** para Pradeep, verifique se a caixa de seleção **Criar automaticamente uma senha** exibe uma marca de seleção. Se não exibir, então selecione esta caixa agora para que o sistema gere automaticamente uma senha para Pradeep.  <br/>
+34. Na janela de **Redefinir senha** que aparece para Pradeep, verifique se a caixa de seleção **Criar uma senha automaticamente** exibe uma marca de seleção; se não exibir, selecione esta caixa agora para que o sistema gere automaticamente uma senha para Pradeep.  <br/>
 
     Esta é apenas uma senha temporária, pois Lynne quer forçar Pradeep a alterá-la na próxima vez que ele fizer logon. Portanto, verifique se a caixa de seleção **Exigir que este usuário altere a senha quando entrar pela primeira vez** exibe uma marca de seleção. Se a caixa estiver desmarcada, então selecione-a para que exiba uma marca de seleção.
     
@@ -284,7 +284,7 @@ Nesta tarefa, você irá começar examinando as propriedades administrativas de 
 
 40. A janela **Bloquear entrada** deve exibir uma mensagem indicando que Alex está agora bloqueado de fazer logon (e ninguém pode fazer logon com o nome de usuário de Alex no caso de seu nome de usuário ter sido realmente comprometido). Além disso, Alex será desconectado automaticamente dos serviços da Microsoft dentro de 60 minutos. Selecione **X** no canto superior do painel para fechá-lo. 
 
-41. Lynne acabou de ser informada que o nome de usuário de **Nestor Wilke** também foi potencialmente comprometido. Para bloquear a capacidade de Nestor fazer logon (e impedir que qualquer outra pessoa use seu nome de usuário para fazer logon), repita as etapas de 33 a 36. <br/>
+41. Lynne acabou de ser informada que o nome de usuário de **Nestor Wilke** também foi potencialmente comprometido. Repita os passos 37 a 40 para bloquear o acesso do Nestor (e para bloquear qualquer outra pessoa de usar o nome de usuário dele para entrar). <br/>
 
     Quando você tentou bloquear o logon de Nestor, deve ter recebido uma mensagem de erro indicando que **As alterações não puderam ser salvas**. A razão pela qual você recebeu esse erro é que Nestor é um Administrador Global, e Lynne não é. Somente um Administrador Global pode bloquear outro Administrador Global de fazer logon. Lynne precisará pedir a Holly Dickson para fazer essa mudança. <br/>
 
@@ -306,7 +306,7 @@ Nesta tarefa, você irá começar examinando as propriedades administrativas de 
 
 46. No **LON-CL1**, você deve continuar conectado ao **Microsoft 365** como Holly Dickson no seu navegador Edge. A lista de **Usuários ativos** deve ser exibida no **Centro de administração do Microsoft 365** conforme mencionado anteriormente nesta tarefa. 
 
-47. Após uma investigação mais aprofundada, o CTO da Adatum determinou que a conta de Alex Wilber, de fato, não foi comprometida. Portanto, o CTO pediu a Holly que remova o bloqueio da conta de usuário de Alex. Repita as etapas de 33 a 36 para desbloquear a conta dele. Observe como a janela **Bloquear entrada** da etapa 35 agora exibe a janela **Desbloquear entrada** em vez disso.  <br/>
+47. Após uma investigação mais aprofundada, o CTO da Adatum determinou que a conta de Alex Wilber, de fato, não foi comprometida. Portanto, o CTO pediu a Holly que remova o bloqueio da conta de usuário de Alex. Repita as etapas 37 a 40 para desbloquear sua conta. Observe como a janela de **Bloquear entrada** da etapa 39 agora exibe a janela de **Desbloquear entrada**.  <br/>
 
     Na janela **Desbloquear entrada**, a caixa de seleção **Bloquear a entrada deste usuário** está selecionada no momento. Desmarque esta caixa de seleção e, em seguida, selecione **Salvar alterações**. <br/>
     

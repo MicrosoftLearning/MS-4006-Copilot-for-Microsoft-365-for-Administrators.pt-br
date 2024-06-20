@@ -22,41 +22,56 @@ Você fará login no Client 1 PC (LON-CL1) usando a conta local Adatum\Administr
 
 ### Tarefa 1: configurar o perfil Organizacional da Adatum
 
-Ao longo dos laboratórios deste curso, você desempenhará o papel de Holly Dickson, a administradora do Microsoft 365 da Adatum. Como Holly, você será responsável por configurar o perfil da empresa para seu locatário de avaliação do Microsoft 365. Nesta tarefa, você configurará as opções necessárias para o locatário da Adatum. Como a Holly ainda não criou uma conta de usuário pessoal do Microsoft 365 para si mesma (o que será feito no próximo exercício de laboratório), ela entrará inicialmente no Microsoft 365 usando a conta de administrador de locatário padrão do Microsoft 365 e a senha que foi criada pelo seu provedor de hospedagem de laboratório. Essa conta é a **MOD Administrator**, cujo alias é "admin". O nome de usuário dessa conta é **admin@xxxxxZZZZZZ.onmicrosoft.com** (onde xxxxxZZZZZZ o prefixo do locatário atribuído pelo seu provedor de hospedagem de laboratório); o nome de exibição para essa conta será MOD Administrator.
+Ao longo dos laboratórios deste curso, você desempenhará o papel de Holly Dickson, a administradora do Microsoft 365 da Adatum. Como Holly, você será responsável por configurar o perfil da empresa para seu locatário de avaliação do Microsoft 365. Nesta tarefa, você configurará as opções necessárias para o locatário da Adatum. Como a Holly ainda não criou uma conta de usuário pessoal do Microsoft 365 para si mesma (o que será feito no próximo exercício de laboratório), ela entrará inicialmente no Microsoft 365 usando a conta de administrador de locatário padrão do Microsoft 365 e a senha que foi criada pelo seu provedor de hospedagem de laboratório. Essa conta é a MOD Administrator, cujo alias é "admin". O nome de usuário dessa conta é admin@xxxxxZZZZZZ.onmicrosoft.com (onde xxxxxZZZZZZ o prefixo do locatário atribuído pelo seu provedor de hospedagem de laboratório); o nome de exibição para essa conta será MOD Administrator.
 
-1. Ao abrir o ambiente de Máquina Virtual do provedor de hospedagem de laboratório, você precisa começar com a Client 1 VM (LON-CL1). Se o ambiente da VM abrir com uma das outras máquinas (como LON-DC1), então mude para **LON-CL1** agora.
+1. O provedor de hospedagem do laboratório fornecerá duas senhas que são usadas com as contas de usuário fictícias em seu locatário de avaliação do Microsoft 365. A conta Administrador MOD, que é o administrador padrão do locatário, recebeu a **Senha Administrativa**. Todos os outros usuários, mesmo aqueles a quem foi atribuída uma função de administrador, receberam a **Senha de Usuário**. <br>
 
-2. Faça login na **LON-CL1** com a conta de **Administrador** local que foi criada pelo provedor de hospedagem do laboratório com a senha **Pa55w.rd**. 
+    Por motivos de segurança, a Microsoft configurou o locatário de avaliação de modo que todos os usuários predefinidos tenham de alterar a senha na próxima entrada. Alguns provedores de hospedagem de laboratórios podem fornecer dois novos campos de senha, um para administradores (na verdade, o administrador MOD e Holly Dickson) e outro para todos os demais usuários. Se esses dois novos campos de senha aparecerem em sua VM, insira uma nova senha para cada um deles. Esses novos valores de senha serão armazenados na VM e exibidos nas instruções do laboratório. <br>
+ 
+    Outros provedores de hospedagem de laboratório podem não fornecer esses novos campos de senha. Nesses ambientes, é necessário anotar manualmente a nova senha que você planeja atribuir aos usuários que entrarem. <br>
 
-3. Na barra de tarefas localizada na parte inferior da tela, selecione o ícone do **Microsoft Edge**. Se for necessário, maximize a janela do navegador quando ela abrir.
+    Ao criar suas novas senhas, tenha em mente as diretrizes de senha da Microsoft: <br>
 
-4. No seu navegador Edge, vá para a página inicial do **Microsoft 365** inserindo a seguinte URL na barra de endereços: **https://portal.office.com** 
+    - Comprimento mínimo de 8 caracteres, com pelo menos:
+       - 1 caractere maiúsculo
+       - 1 caractere minúsculo
+       - 1 caractere especial As senhas não serão validadas de acordo com os requisitos da Microsoft até que você altere a senha antiga na próxima entrada do usuário.
 
-5. Na caixa de diálogo de **Login** que aparece, insira o **Nome de Usuário Administrativo** fornecido pelo provedor de hospedagem do seu laboratório (essa é a conta do Administrador MOD). O nome de usuário deve estar no formato de **admin@xxxxxZZZZZZ.onmicrosoft.com**, onde xxxxxZZZZZZ é o prefixo do locatário atribuído pelo seu provedor de hospedagem de laboratório. Selecione **Avançar**. <br/>
+2. Ao abrir o ambiente de Máquina Virtual do provedor de hospedagem de laboratório, você precisa começar com a Client 1 VM (LON-CL1). Se o ambiente da VM abrir com uma das outras máquinas (como LON-DC1), então mude para **LON-CL1** agora.
+
+3. Faça login na **LON-CL1** com a conta de **Administrador** local que foi criada pelo provedor de hospedagem do laboratório com a senha **Pa55w.rd**. 
+
+4. Na barra de tarefas localizada na parte inferior da tela, selecione o ícone do **Microsoft Edge**. Se for necessário, maximize a janela do navegador quando ela abrir.
+
+5. No seu navegador Edge, vá para a página inicial do **Microsoft 365** inserindo a seguinte URL na barra de endereços: **https://portal.office.com** 
+
+6. Na caixa de diálogo **Entrar**, insira o **Nome de Usuário Administrativo** fornecido pelo provedor de hospedagem do laboratório (esta é a conta de Administrador MOD) para o locatário de avaliação do Microsoft 365. O nome de usuário deve estar no formato de **admin@xxxxxZZZZZZ.onmicrosoft.com**, onde xxxxxZZZZZZ é o prefixo do locatário atribuído pelo seu provedor de hospedagem de laboratório. Selecione **Avançar**. <br/>
 
     **Observação:** Nas instruções de laboratório que aparecem em seu ambiente de laboratório de VM, seu provedor de hospedagem de laboratório pode fornecer a capacidade de selecionar um botão **Digitar texto** (ou equivalente) ao lado dos dados do recurso, como nomes de usuário, senhas, comandos do PowerShell e outros dados que devem ser inseridos ao longo desses laboratórios. Outros provedores de hospedagem de laboratório podem fornecer um método alternativo, como a possibilidade de copiar e colar essas informações. Aproveite essa funcionalidade para não ter que inserir manualmente essas informações. 
 
-6. Na caixa de diálogo **Inserir senha**, insira a **Senha Administrativa** fornecida pelo provedor de hospedagem do seu laboratório e, em seguida, selecione **Entrar**. Se necessário, execute o processo de login com MFA.
+7. Na caixa de diálogo **Inserir senha**, insira a **Senha Administrativa** predefinida fornecida pelo provedor de hospedagem do laboratório e selecione **Entrar**. 
 
-7. Na caixa de diálogo **Permanecer conectado?** selecione a caixa de seleção **Não mostrar novamente** e, em seguida, selecione **Sim**. Na caixa de diálogo **Salvar senha** que aparece, selecione **Nunca**.
+8. O provedor de hospedagem do laboratório pode ou não ter configurado a conta MOD de Administrador para exigir uma nova senha na entrada. Se for o caso, será exibida uma caixa de diálogo **Atualizar sua senha**. Se isso ocorrer, insira a **Senha Administrativa** fornecida pelo provedor de hospedagem do laboratório no campo **Senha atual** e, em seguida, insira a Nova Senha Administrativa nos campos **Nova senha** e **Confirmar senha** e selecione **Entrar**.
 
-8. Se uma caixa de diálogo **Bem-vindo ao Microsoft 365** aparecer no meio da tela, não existirá uma opção para fechá-la. Em vez disso, à direita da janela, selecione o ícone de seta para a frente (**>**) duas vezes e, em seguida, selecione o ícone de marca de seleção para avançar pelos slides nessa janela de mensagens. 
+9. Se uma caixa de diálogo **Permanecer conectado?** aparecer, marque a caixa de seleção **Não mostrar isso novamente** e, a seguir, selecione **Sim**. 
 
-9. Se uma janela **Localizar mais aplicativos** ou uma janela **Criar com o Microsoft 365** aparecerem, selecione o **X** no canto superior dessas janelas para fechá-las. 
+10. Se uma caixa de diálogo **Bem-vindo ao Microsoft 365** aparecer no meio da tela, não existirá uma opção para fechá-la. Em vez disso, à direita da janela, selecione o ícone de seta para a frente (**>**) duas vezes e, em seguida, selecione o ícone de marca de seleção para avançar pelos slides nessa janela de mensagens. 
 
-10. A página de **Boas-vindas ao Microsoft 365** aparece no navegador Edge na guia **Página Inicial | Microsoft 365**. Esta é a página inicial do Microsoft 365 do MOD Administrator. <br/>
+11. Se aparecer uma caixa de diálogo **Encontrar mais aplicativos** ou uma caixa de diálogo **Criar com o Microsoft 365**, selecione **X** no canto superior das caixas para fechá-las. Da mesma forma, se aparecer uma caixa de diálogo Entrar no Microsoft Edge, selecione o botão **Não, obrigado**.
 
-    Observe o ícone que aparece no canto superior direito da tela. Esse ícone representa a conta **MOD Administrator**, que é a conta de administrador de locatário criada pelo seu provedor de hospedagem de laboratório, com a qual você acabou de entrar. As outras contas de usuário do Microsoft 365 que foram criadas pelo provedor de hospedagem de laboratório têm uma imagem associada a cada uma delas; portanto, quando você entrar como qualquer um desses usuários nos próximos laboratórios, a imagem do usuário será exibida em vez das iniciais do usuário. No entanto, quando um usuário como o MOD Administrator não tem nenhuma imagem atribuída, as iniciais do usuário são exibidas no lugar da imagem ou, como nesse caso, um ícone que foi atribuído à conta. <br/>
+12. A página de **Boas-vindas ao Microsoft 365** aparece no navegador Edge na guia **Página Inicial | Microsoft 365**. Esta é a página inicial do Microsoft 365 do MOD Administrator. <br/>
+
+    Observe que um ícone ou um círculo com "MA" (as iniciais de Administrador MOD) aparece no canto superior direito da tela. Alguns locatários de teste mostram um ícone; outros mostram as iniciais "MA" em um círculo; tudo depende de o provedor de hospedagem do laboratório ter adicionado um ícone à conta do Administrador MOD. O ícone ou as iniciais representam a conta **Administrador MOD**, que é a conta de administrador de locatário criada pelo provedor de hospedagem de laboratório com a qual você acabou de entrar. Se alguma das contas de usuário existentes do Microsoft 365 criadas pelo provedor de hospedagem de laboratório tiver uma imagem associada à conta, a imagem do usuário será exibida em vez das iniciais do usuário quando você entrar no Microsoft 365 como esse usuário. No entanto, quando um usuário, como o Administrador MOD, não tem uma foto atribuída, ou as iniciais do usuário são exibidas no lugar da foto, ou um ícone é exibido se um tiver sido atribuído à conta pelo seu provedor de hospedagem de laboratório. <br/>
 
     Na página **Bem-vindo ao Microsoft 365**, na lista de ícones de aplicativos que aparece no painel de navegação, selecione **Administrador**; isso abrirá o **Centro de administração do Microsoft 365** em uma nova guia do navegador. 
 
-11. No **Centro de administração do Microsoft 365**, selecione **Mostrar tudo** no painel de navegação e depois em **Configurações**. No grupo de **Configurações**, selecione **Configurações da organização**. 
+13. No **Centro de administração do Microsoft 365**, selecione **Mostrar tudo** no painel de navegação e depois em **Configurações**. No grupo de **Configurações**, selecione **Configurações da organização**. 
 
-12. Na janela **Configurações da organização**, a guia **Serviços** é exibida por padrão. Selecione a guia **Perfil da organização**.
+14. Na janela **Configurações da organização**, a guia **Serviços** é exibida por padrão. Selecione a guia **Perfil da organização**.
 
-13. Na guia **Perfil da organização**, selecione **Informações da organização** na lista de dados do perfil.
+15. Na guia **Perfil da organização**, selecione **Informações da organização** na lista de dados do perfil.
 
-14. No painel **Informações da organização** que aparece, insira as seguintes informações: <br/>
+16. No painel **Informações da organização** que aparece, insira as seguintes informações: <br/>
 
     - Nome: **Adatum Corporation** (Observação: a Adatum Corporation é uma subsidiária da Contoso Inc. O locatário de avaliação da Microsoft que seu provedor de hospedagem de laboratório adquiriu para esse laboratório pode ter sido originalmente atribuído à Contoso. Se **Contoso** (ou qualquer outro valor) aparecer como o nome da organização, então mude para **Adatum Corporation**.)
 
@@ -74,11 +89,11 @@ Ao longo dos laboratórios deste curso, você desempenhará o papel de Holly Dic
 
     - Idioma preferencial: **Inglês**
 
-15. Selecione **Salvar**.
+17. Selecione **Salvar**.
 
-16. Na parte superior do painel de **Informações da organização**, observe a mensagem indicando que as alterações foram salvas. Selecione **X** no canto superior do painel para fechá-lo.
+18. Na parte superior do painel de **Informações da organização**, observe a mensagem indicando que as alterações foram salvas. Selecione **X** no canto superior do painel para fechá-lo.
 
-17. Permaneça conectado à **LON-CL1** com o Microsoft Edge aberto no **Centro de administração do Microsoft 365** para realizar a próxima tarefa.
+19. Permaneça conectado à **LON-CL1** com o Microsoft Edge aberto no **Centro de administração do Microsoft 365** para realizar a próxima tarefa.
 
 ### Tarefa 2: criar um tema personalizado para a equipe do projeto piloto da Adatum
 
