@@ -11,30 +11,61 @@ Para implementar Rótulos de confidencialidade como parte do projeto piloto no A
 
 **Observação:** Embora a alteração da marca de Azure AD para Microsoft Entra ID ainda esteja em andamento, o cliente da Proteção de Informações do Azure não foi renomeado a partir deste texto. Eventualmente, ele será alterado para o cliente do Microsoft Entra ID Protection.
 
-1. No final do laboratório anterior, você estava no LON-CL2. Alterne para **LON-CL1**.  <br/>
-
-    Você ainda deve estar logado no LON-CL1 com a conta local **adatum\administrador** e, no navegador Edge, ainda deve estar logado no Microsoft 365 como **Holly Dickson**. 
+1. Você ainda deve estar logado no LON-CL1 com a conta local **adatum\administrador** e, no navegador Edge, ainda deve estar logado no Microsoft 365 como **Holly Dickson**. 
 
 2. No **Microsoft Edge**, abra uma nova guia e insira (ou copie e cole) a seguinte URL na barra de endereços: **https://www.microsoft.com/en-us/download/confirmation.aspx?id=53018** <br/>
 
-    Isso começará o download do cliente de rotulagem unificada da Proteção de Informações do Azure.
+    Isso iniciará o download para o cliente da **Proteção de Informações do Microsoft Purview**.
 
-3. Na janela **Downloads** que aparece no canto superior direito da página, você verá o arquivo **AzInfoProtection_UI.exe** sendo baixado. Depois que o arquivo terminar de baixar, selecione o link **Abrir arquivo** que aparece abaixo do nome do arquivo.  <br/>
+3. Na janela **Downloads** que aparece no canto superior direito da página, você verá o arquivo **PurviewInfoProtection.exe** sendo baixado. Depois que o arquivo terminar de baixar, selecione o link **Abrir arquivo** que aparece abaixo do nome do arquivo.
 
-    **Observação:** Os testes mostraram que, às vezes, pode levar de 10 a 15 segundos para que o assistente da **Proteção de Informações do Microsoft Azure** seja aberto. Evite selecionar **Abrir arquivo** uma segunda vez até ter certeza de que o assistente não foi iniciado.
+4. O assistente da **Proteção de Informações do Microsoft Azure** será aberto. Se o assistente não for exibido na área de trabalho, selecione o ícone do assistente na barra de tarefas para exibir o assistente.
 
-4. O assistente da **Proteção de Informações do Microsoft Azure** será aberto (eventualmente). Se o assistente não for exibido na área de trabalho, selecione o ícone do assistente na barra de tarefas para exibir o assistente.
-
-5. Na janela **Instalar o cliente da Proteção de Informações do Azure** que aparece, desmarque a caixa de seleção **Ajudar a melhorar a Proteção de Informações do Azure enviando estatísticas de uso para a Microsoft** e selecione o botão **Concordo**.
+5. No assistente, na janela **Instalar o **cliente Proteção de Informações do Microsoft Purview**** exibida, selecione **Eu reconheço que o Suplemento AIP do Office será desinstalado (necessário)** e desmarque **Ajude a melhorar a Proteção de Informações do Microsoft Purview enviando estatísticas de uso para a caixa de seleção da Microsoft**. Em seguida, selecione o botão **Concordar**.
 
 6. Quando a instalação for concluída, selecione **Fechar**.
 
-7. No navegador Edge, feche a guia **Baixar** que foi aberta nesta tarefa para baixar o cliente da Proteção de Informações do Azure.
-
 Você instalou com sucesso o cliente de Rotulagem Unificada da Proteção de Informações do Azure na VM LON-CL1.
 
+### Tarefa 2 - Habilitar rótulos de confidencialidade para arquivos no SharePoint e no OneDrive
 
-### Tarefa 2 – Criar um rótulo de confidencialidade
+Neste exercício, você habilitará rótulos de confidencialidade para arquivos do Office com suporte e arquivos PDF no SharePoint e no OneDrive. Quando esse recurso está habilitado, os usuários veem o botão **Confidencialidade** na faixa de opções para que possam aplicar rótulos. Eles também veem qualquer nome de rótulo aplicado na barra de status. Para o SharePoint, os usuários também podem ver e aplicar rótulos de confidencialidade no painel de detalhes.
+
+Habilitar esse recurso também faz com que o SharePoint e o OneDrive possam processar o conteúdo dos arquivos do Office e, opcionalmente, documentos PDF que foram criptografados usando um rótulo de confidencialidade. O rótulo pode ser aplicado no Office para a Web ou em aplicativos da área de trabalho do Office e carregado ou salvo no SharePoint e no OneDrive. Até habilitar esse recurso, esses serviços não poderão processar arquivos criptografados, o que significa que a coautoria, descoberta eletrônica, prevenção contra perda de dados, pesquisa e outros recursos colaborativos não funcionarão para esses arquivos.
+
+Primeiro, você habilitará rótulos de confidencialidade para arquivos online do Office armazenados no SharePoint e no OneDrive. Em seguida, você habilitará o suporte para PDFs.
+
+**Observação:** Assim como acontece com todas as alterações de configuração no nível do locatário para o SharePoint e o OneDrive, leva cerca de 15 minutos para que a alteração entre em vigor.
+
+1. No LON-CL1, no navegador Edge, você deve continuar conectado no Microsoft 365 como **Holly Dickson**.
+
+2. No navegador Edge, você ainda deve ter uma guia aberta para o **Centro de administração do Microsoft 365**. Caso contrário, abra uma nova guia e insira a seguinte URL: **https://admin.microsoft.com**.
+
+3. No **Centro de administração do Microsoft 365**, se necessário, selecione **... Mostrar tudo **. Selecione **Conformidade** no grupo **Centros de administração**. Isso abre o portal do Microsoft Purview em uma nova guia.
+
+4. Você começará habilitando rótulos de confidencialidade para arquivos online do Office armazenados no SharePoint e no OneDrive. <br/>
+
+    No portal do **Microsoft Purview**, na seção **Soluções** no painel de navegação, selecione **Proteção de informações** e selecione **Rótulos**.
+
+5. Na página **Rótulos**, a seguinte mensagem deve aparecer no meio da página: **Sua organização não habilitou o processamento de conteúdo em arquivos online do Office com rótulos de confidencialidade criptografados aplicados e que estão armazenados no OneDrive e no SharePoint. Você pode ativar aqui, mas observe que a configuração adicional é necessária para ambientes multigeográficos.** <br/>
+
+    Abaixo desta mensagem está um botão **Ativar agora**. Selecione esse botão.  <br/>
+
+    **Observação:** O comando é executado imediatamente e, quando a página for atualizada, você não verá mais a mensagem ou o botão.
+
+6. Agora você habilitará a proteção em PDF para arquivos no SharePoint e no OneDrive. <br/>
+
+    No portal do **Microsoft Purview**, no grupo **Proteção de informações** do painel de navegação, selecione **Rotulagem Automática**.
+
+7. Na página **Rotulagem Automática**, você deverá ver a faixa **Proteger PDFs com Rotulagem Automática** no meio da página. Selecione o título **Proteger PDFs com Rotulagem Automática** para ativar a proteção em PDF para arquivos no SharePoint e no OneDrive. 
+
+8. Na caixa de diálogo **Rotulagem Automática** exibida, selecione **Confirmar** para confirmar se deseja ativar a proteção em PDF para arquivos no SharePoint e no OneDrive. 
+
+    **Observação:** O comando é executado imediatamente e, quando a página for atualizada em seguida, você não verá mais a faixa **Proteger PDFs com Rotulagem Automática**.
+
+9. Deixe o navegador Edge aberto junto com todas as guias. 
+
+### Tarefa 2 - Criar um rótulo de confidencialidade
 
 Neste exercício, você criará um Rótulo de Confidencialidade e o adicionará à política padrão para que ele seja válido para todos os usuários do locatário do Adatum.
 
@@ -175,7 +206,7 @@ Neste exercício, você criará um Rótulo de Confidencialidade e o adicionará 
 45. Na página **Nova política criada**, selecione **Concluído**.
 
 
-### Tarefa 3 – Atribuir um rótulo de confidencialidade pré-existente a um documento
+### Tarefa 3 - Atribuir um rótulo de confidencialidade pré-existente a um documento
 
 Conforme descrito nas instruções no início deste laboratório, não é possível testar imediatamente o rótulo de confidencialidade e a política de rótulo que você criou na tarefa anterior. Isso ocorre porque demora até 24 horas para que uma nova política de rótulo seja propagada por meio do Microsoft 365 e para que seu rótulo fique visível em aplicativos como o Microsoft Word e o Outlook.
 
@@ -230,9 +261,9 @@ Em vez disso, você testará um dos rótulos de confidencialidade pré-existente
 Você acabou de criar com sucesso um documento do Word contendo o rótulo Altamente Confidencial intitulado **Projeto - Falcon**. 
 
 
-### Tarefa 4 – Proteger um documento usando o Microsoft Entra ID Protection
+### Tarefa 4 - Proteger um documento usando a Proteção de Informações do Microsoft Purview
 
-Na tarefa anterior, você criou um documento do Word e o protegeu com o rótulo de confidencialidade **Project – Falcon**. Esse rótulo inseriu uma marca d'água no documento. Nesta tarefa, você compartilhará o documento criado com Joni Sherman e restringirá Joni à permissão "Somente exibição". Isso permitirá que você veja como o Microsoft Entra ID Protection protege o documento com base nos parâmetros configurados.
+Na tarefa anterior, você criou um documento do Word e o protegeu com o rótulo de confidencialidade **Project – Falcon**. Esse rótulo inseriu uma marca d'água no documento. Nesta tarefa, você compartilhará o documento criado com Joni Sherman e restringirá Joni à permissão "Somente exibição". Isso permitirá que você veja como a Proteção de Informações do Microsoft Purview protege o documento com base nos parâmetros configurados.
 
 Para verificar se a proteção atribuída ao documento funciona, envie primeiro o documento por email para duas pessoas: para Joni Sherman e para seu endereço de email pessoal. Em seguida, você verificará se Joni só pode ver o documento e não editá-lo, e se você não pode acessar o documento, pois ele não foi compartilhado com você. Por fim, você alterará a permissão no documento para que Joni possa editá-lo e enviará este documento atualizado por email para ela para teste. A finalidade dos dois emails para Joni, um com um link de documento que fornece acesso somente leitura e outro com um link de documento que fornece a capacidade de editar o documento, é ver como o Microsoft Entra ID Protection pode fornecer vários níveis de proteção de documentos. 
 
@@ -242,7 +273,7 @@ Para verificar se a proteção atribuída ao documento funciona, envie primeiro 
 
 3. Na página **Aplicativos**, clique com o botão direito do mouse no bloco **Outlook** e selecione **Abrir em nova guia**. Isso abre a caixa de correio da Holly no Outlook na web em uma nova guia do navegador. 
 
-4. No **Outlook na web**, selecione **Novo email** na parte superior esquerda da tela.
+4. No **Outlook na Web**, selecione **Novo email** na parte superior da tela.
 
 5. Insira as seguintes informações no formulário do email:
 
@@ -268,7 +299,7 @@ Para verificar se a proteção atribuída ao documento funciona, envie primeiro 
 
 11. Na janela **Compartilhar "DocumentoProtegido1"**, passe o mouse sobre o ícone de olho que aparece à direita do nome de Joni. Isso deve mostrar **Pode exibir**, que é a configuração atual atribuída a ela para este documento. O ícone de olho é a designação para "Pode exibir". Selecione o botão **Copiar link**. 
 
-12. Depois que a mensagem **Link copiado** for exibida na parte inferior da janela **Compartilhar "DocumentoProtegido1"**, selecione o X no canto superior direito da janela para fechá-la.
+12. Depois que a mensagem **Link copiado** for exibida na parte inferior da janela **Compartilhar "DocumentoProtegido1"**, selecione o X no canto superior da janela para fechá-la.
 
 13. No navegador Edge, selecione a guia **Email – Holly Dickson – Outlook** para retornar à sua mensagem de email. No corpo da mensagem, no texto que você adicionou anteriormente, cole (Ctrl+V) no link para o documento compartilhado que você acabou de copiar para sua área de transferência. Um link para o arquivo chamado **DocumentoProtegido1.docx** deve aparecer. 
 
@@ -286,7 +317,7 @@ Para verificar se a proteção atribuída ao documento funciona, envie primeiro 
 
 20. Na janela **Entrar**, insira **JoniS@xxxxxZZZZZZ.onmicrosoft** (em que xxxxxZZZZZZ é o prefixo de locatário fornecido pelo provedor de hospedagem do seu laboratório) e selecione **Avançar**.
 
-21. Na janela **Digite a senha**, digite a **Senha do usuário** fornecida pelo seu provedor de hospedagem de laboratório e selecione **Entrar**. Se necessário, conclua o processo de logon do MFA.
+21. Na janela **Inserir senha**, insira a Nova Senha de Usuário que você atribuiu anteriormente à conta do Joni e selecione **Entrar**. 
 
 22. Se uma janela **Bem-vindo** aparecer, selecione o X para fechá-lo.
 
@@ -340,7 +371,7 @@ Para verificar se a proteção atribuída ao documento funciona, envie primeiro 
 
 36. Quando Joni tinha permissão de Somente Exibição, o documento foi aberto no painel Modo de Exibição de Leitura. Dessa forma, Joni não pôde editar o documento. Esta versão do documento fornece permissão de Edição à Joni, portanto, desta vez, o documento deve ser aberto no modo de edição normal do Word. Verifique se você pode inserir texto no documento. 
 
-    **Observação:**  Nesta tarefa, você acabou de verificar se o Microsoft Entra ID Protection protegeu o documento com base nos parâmetros de política de PII que você configurou. Quando Joni recebeu a permissão de Somente Exibição, o documento foi aberto no modo de exibição Leitura e ela não pôde alterá-lo. Quando Joni recebeu a permissão de Edição, o documento foi aberto no Word e ela pôde alterá-lo. E como Holly não compartilhou o documento com você, você não pôde abri-lo quando ela enviou o documento por email para sua caixa de correio pessoal. 
+    **Observação:**  Nesta tarefa, você acabou de verificar se a Proteção de Informações do Microsoft Purview protegeu o documento com base nos parâmetros de política de PII que você configurou. Quando Joni recebeu a permissão de Somente Exibição, o documento foi aberto no modo de exibição Leitura e ela não pôde alterá-lo. Quando Joni recebeu a permissão de Edição, o documento foi aberto no Word e ela pôde alterá-lo. E como Holly não compartilhou o documento com você, você não pôde abri-lo quando ela enviou o documento por email para sua caixa de correio pessoal. 
 
 ## Fim do laboratório 3
 
